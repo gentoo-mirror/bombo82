@@ -1,0 +1,13 @@
+DEFINED_PHASES=install prepare
+DESCRIPTION=A complete toolset for web, mobile and enterprise development
+EAPI=7
+HOMEPAGE=https://www.jetbrains.com/idea
+IUSE=custom-jdk
+KEYWORDS=~amd64 ~x86
+LICENSE=IDEA || ( IDEA_Academic IDEA_Classroom IDEA_OpenSource IDEA_Personal )
+RDEPEND=!custom-jdk? ( virtual/jdk )
+RESTRICT=mirror splitdebug
+SLOT=2019.2
+SRC_URI=https://download.jetbrains.com/idea/ideaIU-2019.2.2.tar.gz -> idea-ultimate-2019.2.2.tar.gz
+_eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	eutils	6e6c2737b59a4b982de6fb3ecefd87f8
+_md5_=5ac8b14ca9a08b5afae7895d45dccbcd

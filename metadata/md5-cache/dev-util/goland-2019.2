@@ -1,0 +1,13 @@
+DEFINED_PHASES=install prepare
+DESCRIPTION=GoLand is a cross-platform IDE built specially for Go developers
+EAPI=7
+HOMEPAGE=https://www.jetbrains.com/go
+IUSE=custom-jdk
+KEYWORDS=~amd64 ~x86
+LICENSE=IDEA || ( IDEA_Academic IDEA_Classroom IDEA_OpenSource IDEA_Personal )
+RDEPEND=dev-lang/go !custom-jdk? ( virtual/jdk )
+RESTRICT=mirror splitdebug
+SLOT=2019.2
+SRC_URI=https://download.jetbrains.com/go/GoLand-2019.2.tar.gz -> goland-2019.2.tar.gz
+_eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	eutils	6e6c2737b59a4b982de6fb3ecefd87f8
+_md5_=4332e27f7417c3d5077e66930010ff67
