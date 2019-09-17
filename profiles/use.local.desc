@@ -17,3 +17,11 @@ app-emulation/vmware-workstation:vmware-tools-solaris - Install VMware Tools for
 app-emulation/vmware-workstation:vmware-tools-winPre2k - Install VMware Tools for Windows (before 2000) guests.
 app-emulation/vmware-workstation:vmware-tools-winPreVista - Install VMware Tools for Windows (after 2000, before Vista) guests.
 app-emulation/vmware-workstation:vmware-tools-windows - Install VMware Tools for Windows (Vista and later) guests.
+dev-util/clion:custom-jdk - Install and use JetBranins' custom JDK.
+dev-util/datagrip:custom-jdk - Install and use JetBranins' custom JDK.
+dev-util/goland:custom-jdk - Install and use JetBranins' custom JDK.
+dev-util/idea-ultimate:custom-jdk - Install and use JetBranins' custom JDK.
+dev-util/phpstorm:custom-jdk - Install and use JetBranins' custom JDK.
+dev-util/pycharm-professional:custom-jdk - Install and use JetBranins' custom JDK.
+dev-util/rubymine:custom-jdk - Install and use JetBranins' custom JDK.
+dev-util/webstorm:custom-jdk - Install and use JetBranins' custom JDK.
