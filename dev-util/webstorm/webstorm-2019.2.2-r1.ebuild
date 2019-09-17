@@ -6,12 +6,11 @@ EAPI=7
 
 inherit desktop eutils
 
-DESCRIPTION="The Python IDE for Professional Developers"
-HOMEPAGE="https://www.jetbrains.com/pycharm"
-SRC_URI="https://download.jetbrains.com/python/pycharm-professional-${PV}.tar.gz -> ${P}.tar.gz"
+DESCRIPTION="The smartest JavaScript IDE"
+HOMEPAGE="https://www.jetbrains.com/webstorm"
+SRC_URI="https://download.jetbrains.com/webstorm/WebStorm-${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="IDEA
-	|| ( IDEA_Academic IDEA_Classroom IDEA_OpenSource IDEA_Personal )"
+LICENSE="|| ( jetbrains_business-3.1 jetbrains_individual-4.1 jetbrains_student-3.2 jetbrains_classroom-4.1 jetbrains_open_source-4.1 )"
 SLOT="$(ver_cut 1-2)"
 KEYWORDS="~amd64 ~x86"
 RESTRICT="mirror splitdebug"
@@ -20,7 +19,8 @@ IUSE="custom-jdk"
 RDEPEND="
 	!custom-jdk? ( virtual/jdk )"
 
-S="${WORKDIR}/pycharm-${PV}"
+BUILD_NUMBER="192.6603.19"
+S="${WORKDIR}/WebStorm-${BUILD_NUMBER}"
 
 QA_PREBUILT="opt/${P}/*"
 
@@ -42,7 +42,7 @@ src_install() {
 
 	insinto "${dir}"
 	doins -r *
-	fperms 755 "${dir}"/bin/pycharm.sh
+	fperms 755 "${dir}"/bin/${PN}.sh
 
 	if use amd64; then
 		fperms 755 "${dir}"/bin/fsnotifier64
@@ -57,9 +57,9 @@ src_install() {
 		fi
 	fi
 
-	make_wrapper "${PN}" "${dir}/bin/pycharm.sh"
-	newicon "bin/pycharm.svg" "${PN}.svg"
-	make_desktop_entry "${PN}" "PyCharm ${SLOT}" "${PN}" "Development;IDE;"
+	make_wrapper "${PN}" "${dir}/bin/${PN}.sh"
+	newicon "bin/${PN}.svg" "${PN}.svg"
+	make_desktop_entry "${PN}" "WebStorm ${SLOT}" "${PN}" "Development;IDE;WebDevelopment;"
 
 	# recommended by: https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit
 	dodir /usr/lib/sysctl.d/

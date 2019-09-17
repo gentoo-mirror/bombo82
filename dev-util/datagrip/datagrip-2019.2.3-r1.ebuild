@@ -6,22 +6,19 @@ EAPI=7
 
 inherit desktop eutils
 
-DESCRIPTION="The smartest JavaScript IDE"
-HOMEPAGE="https://www.jetbrains.com/webstorm"
-SRC_URI="https://download.jetbrains.com/webstorm/WebStorm-${PV}.tar.gz -> ${P}.tar.gz"
+DESCRIPTION="Many databases, one tool"
+HOMEPAGE="https://www.jetbrains.com/datagrip"
+SRC_URI="https://download.jetbrains.com/datagrip/datagrip-${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="IDEA
-	|| ( IDEA_Academic IDEA_Classroom IDEA_OpenSource IDEA_Personal )"
+LICENSE="|| ( jetbrains_business-3.1 jetbrains_individual-4.1 jetbrains_student-3.2 jetbrains_classroom-4.1 jetbrains_open_source-4.1 )"
 SLOT="$(ver_cut 1-2)"
 KEYWORDS="~amd64 ~x86"
 RESTRICT="mirror splitdebug"
 IUSE="custom-jdk"
 
-RDEPEND="
-	!custom-jdk? ( virtual/jdk )"
+RDEPEND="!custom-jdk? ( virtual/jdk )"
 
-BUILD_NUMBER="192.6603.19"
-S="${WORKDIR}/WebStorm-${BUILD_NUMBER}"
+S="${WORKDIR}/DataGrip-${PV}"
 
 QA_PREBUILT="opt/${P}/*"
 
@@ -60,7 +57,7 @@ src_install() {
 
 	make_wrapper "${PN}" "${dir}/bin/${PN}.sh"
 	newicon "bin/${PN}.svg" "${PN}.svg"
-	make_desktop_entry "${PN}" "WebStorm ${SLOT}" "${PN}" "Development;IDE;WebDevelopment;"
+	make_desktop_entry "${PN}" "DataGrip ${SLOT}" "${PN}" "Development;IDE;"
 
 	# recommended by: https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit
 	dodir /usr/lib/sysctl.d/

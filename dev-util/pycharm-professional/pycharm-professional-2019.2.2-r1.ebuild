@@ -10,8 +10,7 @@ DESCRIPTION="The Python IDE for Professional Developers"
 HOMEPAGE="https://www.jetbrains.com/pycharm"
 SRC_URI="https://download.jetbrains.com/python/pycharm-professional-${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="IDEA
-	|| ( IDEA_Academic IDEA_Classroom IDEA_OpenSource IDEA_Personal )"
+LICENSE="|| ( jetbrains_business-3.1 jetbrains_individual-4.1 jetbrains_student-3.2 jetbrains_classroom-4.1 jetbrains_open_source-4.1 )"
 SLOT="$(ver_cut 1-2)"
 KEYWORDS="~amd64 ~x86"
 RESTRICT="mirror splitdebug"
