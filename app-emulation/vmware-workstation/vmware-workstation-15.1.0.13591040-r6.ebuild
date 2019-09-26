@@ -7,10 +7,10 @@ inherit eapi7-ver eutils readme.gentoo-r1 gnome2-utils pam systemd xdg-utils
 
 MY_PN="VMware-Workstation-Full"
 MY_PV=$(ver_cut 1-3)
-PV_MODULES="331.$(ver_cut 2-3)"
+PV_MODULES="${MY_PV}"
 PV_BUILD=$(ver_cut 4)
 MY_P="${MY_PN}-${MY_PV}-${PV_BUILD}"
-VMWARE_FUSION_VER="10.1.6/12989998" # https://softwareupdate.vmware.com/cds/vmw-desktop/fusion/
+VMWARE_FUSION_VER="11.1.0/13668589" # https://softwareupdate.vmware.com/cds/vmw-desktop/fusion/
 SYSTEMD_UNITS_TAG="gentoo-02"
 
 DESCRIPTION="Emulate a complete PC without the performance overhead of most emulators"
@@ -204,12 +204,10 @@ RDEPEND="
 	!app-emulation/vmware-player
 	!app-emulation/vmware-tools
 "
-PDEPEND="
-	modules? ( ~app-emulation/vmware-modules-${PV_MODULES} )
-"
 DEPEND="
 	dev-lang/python:2.7
 	>=dev-util/patchelf-0.9
+	modules? ( ~app-emulation/vmware-modules-${PV_MODULES} )
 	ovftool? ( app-admin/chrpath )
 	sys-libs/ncurses:5
 	sys-libs/readline:0
@@ -226,6 +224,11 @@ QA_WX_LOAD="opt/vmware/lib/vmware/tools-upgraders/vmware-tools-upgrader-32 opt/v
 # adding "opt/vmware/lib/vmware/lib/libvmware-gksu.so/libvmware-gksu.so" to QA_WX_LOAD doesn't work
 
 src_unpack() {
+	if has usersandbox ${FEATURES}; then
+		ewarn "You are emerging ${P} with 'usersandbox' enabled." \
+			"If unpacking fails, try emerging with 'FEATURES=-usersandbox'!"
+	fi
+
 	for a in ${A}; do
 		if [ ${a##*.} == 'bundle' ]; then
 			cp "${DISTDIR}/${a}" "${WORKDIR}"
@@ -701,8 +704,6 @@ pkg_postinst() {
 	xdg_desktop_database_update
 	xdg_mimeinfo_database_update
 	gnome2_icon_cache_update
-	ewarn "This version has reached its 'end of general support' from VMware: https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/support/product-lifecycle-matrix.pdf"
-	ewarn "If you choose to use this instead of the newer version and you're affected by some security issue, you have only yourself to blame."
 	readme.gentoo_print_elog
 }
 
