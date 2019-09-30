@@ -1,12 +1,12 @@
 app-emulation/vmware-modules 15.1.0 15.5.0-r1: VMware kernel modules
 app-emulation/vmware-workstation 15.1.0.13591040-r6 15.5.0.14665864-r2: Emulate a complete PC without the performance overhead of most emulators
-dev-util/clion 2019.2.3: A cross-platform IDE for C and C++
-dev-util/datagrip 2019.2.5: Many databases, one tool
-dev-util/goland 2019.2.2: GoLand is a cross-platform IDE built specially for Go developers
+dev-util/clion 2019.2.3-r1: A cross-platform IDE for C and C++
+dev-util/datagrip 2019.2.5-r1: Many databases, one tool
+dev-util/goland 2019.2.2-r1: GoLand is a cross-platform IDE built specially for Go developers
 dev-util/icemon 3.2.0: Monitor program for use with Icecream compile clusters based on KDE Frameworks
-dev-util/idea-ultimate 2019.2.3: A complete toolset for web, mobile and enterprise development
-dev-util/phpstorm 2019.2.3: The Lightning-Smart PHP IDE
-dev-util/pycharm-professional 2019.2.3: The Python IDE for Professional Developers
-dev-util/rubymine 2019.2.3: The Most Intelligent Ruby and Rails IDE
-dev-util/webstorm 2019.2.3: The smartest JavaScript IDE
+dev-util/idea-ultimate 2019.2.3-r1: A complete toolset for web, mobile and enterprise development
+dev-util/phpstorm 2019.2.3-r1: The Lightning-Smart PHP IDE
+dev-util/pycharm-professional 2019.2.3-r1: The Python IDE for Professional Developers
+dev-util/rubymine 2019.2.3-r1: The Most Intelligent Ruby and Rails IDE
+dev-util/webstorm 2019.2.3-r1: The smartest JavaScript IDE
 sys-devel/icecream 1.2: Distributed compiling of C(++) code across several machines; based on distcc
