@@ -1,5 +1,5 @@
-app-emulation/vmware-modules 15.1.0 15.5.0-r1: VMware kernel modules
-app-emulation/vmware-workstation 15.1.0.13591040-r6 15.5.0.14665864-r2: Emulate a complete PC without the performance overhead of most emulators
+app-emulation/vmware-modules 15.5.0-r1: VMware kernel modules
+app-emulation/vmware-workstation 15.5.0.14665864-r4: Emulate a complete PC without the performance overhead of most emulators
 dev-util/clion 2019.2.3-r1: A cross-platform IDE for C and C++
 dev-util/datagrip 2019.2.5-r1: Many databases, one tool
 dev-util/goland 2019.2.2-r1: GoLand is a cross-platform IDE built specially for Go developers
