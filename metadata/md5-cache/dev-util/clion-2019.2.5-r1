@@ -1,0 +1,13 @@
+DEFINED_PHASES=install prepare
+DESCRIPTION=A cross-platform IDE for C and C++
+EAPI=7
+HOMEPAGE=https://www.jetbrains.com/clion
+IUSE=custom-jdk
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( jetbrains_business-3.1 jetbrains_individual-4.1 jetbrains_education-3.2 jetbrains_classroom-4.1 jetbrains_open_source-4.1 ) Apache-1.1 Apache-2.0 BSD BSD-2 CC0-1.0 CDDL CPL-1.0 GPL-2-with-classpath-exception GPL-3 ISC LGPL-2.1 LGPL-3 MIT MPL-1.1 OFL PSF-2 trilead-ssh UoI-NCSA yFiles yourkit
+RDEPEND=dev-util/cmake sys-devel/gdb !custom-jdk? ( virtual/jdk )
+RESTRICT=bindist mirror splitdebug
+SLOT=0
+SRC_URI=https://download.jetbrains.com/cpp/CLion-2019.2.5.tar.gz -> clion-2019.2.5.tar.gz
+_eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	eutils	fcb2aa98e1948b835b5ae66ca52868c5
+_md5_=1f4db4d18bac97fd3b2bef41b1b214c7
