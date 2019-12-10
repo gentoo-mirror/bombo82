@@ -1,4 +1,4 @@
-app-editors/vscode-bin 1.40.1: Multiplatform Visual Studio Code from Microsoft (binary version)
+app-editors/vscode-bin 1.40.2: Multiplatform Visual Studio Code from Microsoft (binary version)
 app-emulation/vmware-modules 15.5.1: VMware kernel modules
 app-emulation/vmware-workstation 15.5.1.15018445-r1: Emulate a complete PC without the performance overhead of most emulators
 dev-util/clion 2019.2.5-r1 2019.3: A cross-platform IDE for C and C++
