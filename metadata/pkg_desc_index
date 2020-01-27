@@ -8,7 +8,7 @@ dev-util/icemon 3.2.0 3.3: Monitor program for use with Icecream compile cluster
 dev-util/idea-ultimate 2019.3.2: A complete toolset for web, mobile and enterprise development
 dev-util/phpstorm 2019.3.2: The Lightning-Smart PHP IDE
 dev-util/pycharm-professional 2019.3.2: The Python IDE for Professional Developers
-dev-util/rubymine 2019.3.1 2019.3.2: The Most Intelligent Ruby and Rails IDE
+dev-util/rubymine 2019.3.2: The Most Intelligent Ruby and Rails IDE
 dev-util/webstorm 2019.3.2: The smartest JavaScript IDE
 games-rpg/open-adventure 1.8: Forward-port of the Crowther/Woods Adventure 2.5 from 1995
 net-im/zoom-bin 3.5.352596.0119: Video conferencing and web conferencing service
