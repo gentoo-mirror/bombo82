@@ -8,7 +8,7 @@ inherit autotools user
 
 DESCRIPTION="Distributed compiling of C(++) code across several machines; based on distcc"
 HOMEPAGE="https://github.com/icecc/icecream"
-SRC_URI="https://github.com/icecc/${PN}/archive/${PV}.tar.gz"
+SRC_URI="https://github.com/icecc/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -18,6 +18,7 @@ IUSE=""
 DEPEND="
 	sys-libs/libcap-ng
 	app-text/docbook2X
+	app-arch/zstd
 "
 RDEPEND="
 	${DEPEND}
