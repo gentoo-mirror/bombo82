@@ -12,6 +12,6 @@ dev-util/pycharm-professional 2019.3.3: The Python IDE for Professional Develope
 dev-util/rubymine 2019.3.3: The Most Intelligent Ruby and Rails IDE
 dev-util/webstorm 2019.3.3: The smartest JavaScript IDE
 games-rpg/open-adventure 1.8: Forward-port of the Crowther/Woods Adventure 2.5 from 1995
-net-im/zoom-bin 3.5.352596.0119: Video conferencing and web conferencing service
-net-misc/postman-bin 7.18.1: Supercharge your API workflow
+net-im/zoom-bin 3.5.359539.0224: Video conferencing and web conferencing service
+net-misc/postman-bin 7.19.1: Supercharge your API workflow
 sys-devel/icecream 1.2-r1 1.3-r2 1.3.1: Distributed compiling of C(++) code across several machines; based on distcc
