@@ -2,8 +2,8 @@ acct-group/icecream 0: Group for sys-devel/icecream
 acct-group/vmware 0: Group for app-emulation/vmware-modules
 acct-user/icecream 0: User for sys-devel/icecream
 app-editors/vscode-bin 1.43.2: Multiplatform Visual Studio Code from Microsoft (binary version)
-app-emulation/vmware-modules 15.5.1-r3: VMware kernel modules
-app-emulation/vmware-workstation 15.5.1.15018445-r3: Emulate a complete PC without the performance overhead of most emulators
+app-emulation/vmware-modules 15.5.1-r3 15.5.2: VMware kernel modules
+app-emulation/vmware-workstation 15.5.1.15018445-r3 15.5.2.15785246: Emulate a complete PC without the performance overhead of most emulators
 dev-db/dbeaver-bin 6.3.5 7.0.1: Free universal database tool and SQL client
 dev-util/clion 2019.3.5: A cross-platform IDE for C and C++
 dev-util/datagrip 2019.3.4: Many databases, one tool
