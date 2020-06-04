@@ -10,4 +10,4 @@ RESTRICT=bindist mirror splitdebug
 SLOT=0
 SRC_URI=https://download.jetbrains.com/webide/PhpStorm-2020.1.2.tar.gz -> phpstorm-2020.1.2.tar.gz
 _eclasses_=desktop	7fd20552ce4cc97e8acb132a499a7dd8	eutils	fcb2aa98e1948b835b5ae66ca52868c5
-_md5_=b1885a8b1165a978a10b007b7f2fef4b
+_md5_=39aeb390508880a6da23bcfe5473c447
