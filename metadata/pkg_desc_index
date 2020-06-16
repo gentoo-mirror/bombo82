@@ -1,7 +1,7 @@
 acct-group/icecream 0: Group for sys-devel/icecream
 acct-group/vmware 0: Group for app-emulation/vmware-modules
 acct-user/icecream 0: User for sys-devel/icecream
-app-editors/vscode-bin 1.45.1: Multiplatform Visual Studio Code from Microsoft (binary version)
+app-editors/vscode-bin 1.46.0: Multiplatform Visual Studio Code from Microsoft (binary version)
 app-emulation/vmware-modules 15.5.2: VMware kernel modules
 app-emulation/vmware-workstation 15.5.2.15785246: Emulate a complete PC without the performance overhead of most emulators
 dev-db/dbeaver-bin 7.1.0: Free universal database tool and SQL client
