@@ -1,5 +1,5 @@
 acct-group/icecream 0: Group for sys-devel/icecream
-acct-group/vmware 0: Group for app-emulation/vmware-modules
+acct-group/vmware 0-r1: Group for app-emulation/vmware-modules
 acct-user/icecream 0: User for sys-devel/icecream
 app-editors/vscode-bin 1.52.1: Multiplatform Visual Studio Code from Microsoft (binary version)
 app-emulation/vmware-modules 16.1.0: VMware kernel modules
