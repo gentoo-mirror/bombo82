@@ -1,6 +1,6 @@
-acct-group/icecream 0: Group for sys-devel/icecream
+acct-group/icecream 0-r1: Group for sys-devel/icecream
 acct-group/vmware 0-r1: Group for app-emulation/vmware-modules
-acct-user/icecream 0: User for sys-devel/icecream
+acct-user/icecream 0-r1: User for sys-devel/icecream
 app-editors/vscode-bin 1.52.1: Multiplatform Visual Studio Code from Microsoft (binary version)
 app-emulation/vmware-modules 16.1.0: VMware kernel modules
 app-emulation/vmware-workstation 16.1.0.17198959: Emulate a complete PC without the performance overhead of most emulators
@@ -16,4 +16,4 @@ dev-util/rubymine 2020.3.1: The Most Intelligent Ruby and Rails IDE
 dev-util/webstorm 2020.3.1: The smartest JavaScript IDE
 games-rpg/open-adventure 1.9: Forward-port of the Crowther/Woods Adventure 2.5 from 1995
 net-misc/postman-bin 7.36.1: Supercharge your API workflow
-sys-devel/icecream 1.3.1-r1: Distributed compiling of C(++) code across several machines; based on distcc
+sys-devel/icecream 1.3.1-r2: Distributed compiling of C(++) code across several machines; based on distcc
