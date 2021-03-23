@@ -15,52 +15,36 @@ app-emulation/vmware-workstation:vmware-tools-solaris - Install VMware Tools for
 app-emulation/vmware-workstation:vmware-tools-winPre2k - Install VMware Tools for Windows (before 2000) guests.
 app-emulation/vmware-workstation:vmware-tools-winPreVista - Install VMware Tools for Windows (after 2000, before Vista) guests.
 app-emulation/vmware-workstation:vmware-tools-windows - Install VMware Tools for Windows (Vista and later) guests.
-dev-util/clion:jbr - Install and use default variant of JetBranins' custom JRE.
 dev-util/clion:jbr-dcevm - Install and use DCEVM variant of JetBranins' custom JRE.
 dev-util/clion:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
 dev-util/clion:jbr-jcef - Install and use JCEF variant of JetBranins' custom JRE.
-dev-util/clion:jbr-jfx - Install and use JFX variant of JetBranins' custom JRE.
-dev-util/clion:jbr-nomod - Install and use vanilla JetBranins' custom JRE.
-dev-util/datagrip:jbr - Install and use default variant of JetBranins' custom JRE.
+dev-util/clion:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
 dev-util/datagrip:jbr-dcevm - Install and use DCEVM variant of JetBranins' custom JRE.
 dev-util/datagrip:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
 dev-util/datagrip:jbr-jcef - Install and use JCEF variant of JetBranins' custom JRE.
-dev-util/datagrip:jbr-jfx - Install and use JFX variant of JetBranins' custom JRE.
-dev-util/datagrip:jbr-nomod - Install and use vanilla JetBranins' custom JRE.
-dev-util/goland:jbr - Install and use default variant of JetBranins' custom JRE.
+dev-util/datagrip:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
 dev-util/goland:jbr-dcevm - Install and use DCEVM variant of JetBranins' custom JRE.
 dev-util/goland:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
 dev-util/goland:jbr-jcef - Install and use JCEF variant of JetBranins' custom JRE.
-dev-util/goland:jbr-jfx - Install and use JFX variant of JetBranins' custom JRE.
-dev-util/goland:jbr-nomod - Install and use vanilla JetBranins' custom JRE.
-dev-util/idea-ultimate:jbr - Install and use default variant of JetBranins' custom JRE.
+dev-util/goland:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
 dev-util/idea-ultimate:jbr-dcevm - Install and use DCEVM variant of JetBranins' custom JRE.
 dev-util/idea-ultimate:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
 dev-util/idea-ultimate:jbr-jcef - Install and use JCEF variant of JetBranins' custom JRE.
-dev-util/idea-ultimate:jbr-jfx - Install and use JFX variant of JetBranins' custom JRE.
-dev-util/idea-ultimate:jbr-nomod - Install and use vanilla JetBranins' custom JRE.
-dev-util/phpstorm:jbr - Install and use default variant of JetBranins' custom JRE.
+dev-util/idea-ultimate:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
 dev-util/phpstorm:jbr-dcevm - Install and use DCEVM variant of JetBranins' custom JRE.
 dev-util/phpstorm:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
 dev-util/phpstorm:jbr-jcef - Install and use JCEF variant of JetBranins' custom JRE.
-dev-util/phpstorm:jbr-jfx - Install and use JFX variant of JetBranins' custom JRE.
-dev-util/phpstorm:jbr-nomod - Install and use vanilla JetBranins' custom JRE.
-dev-util/pycharm-professional:jbr - Install and use default variant of JetBranins' custom JRE.
+dev-util/phpstorm:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
 dev-util/pycharm-professional:jbr-dcevm - Install and use DCEVM variant of JetBranins' custom JRE.
 dev-util/pycharm-professional:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
 dev-util/pycharm-professional:jbr-jcef - Install and use JCEF variant of JetBranins' custom JRE.
-dev-util/pycharm-professional:jbr-jfx - Install and use JFX variant of JetBranins' custom JRE.
-dev-util/pycharm-professional:jbr-nomod - Install and use vanilla JetBranins' custom JRE.
-dev-util/rubymine:jbr - Install and use default variant of JetBranins' custom JRE.
+dev-util/pycharm-professional:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
 dev-util/rubymine:jbr-dcevm - Install and use DCEVM variant of JetBranins' custom JRE.
 dev-util/rubymine:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
 dev-util/rubymine:jbr-jcef - Install and use JCEF variant of JetBranins' custom JRE.
-dev-util/rubymine:jbr-jfx - Install and use JFX variant of JetBranins' custom JRE.
-dev-util/rubymine:jbr-nomod - Install and use vanilla JetBranins' custom JRE.
-dev-util/webstorm:jbr - Install and use default variant of JetBranins' custom JRE.
+dev-util/rubymine:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
 dev-util/webstorm:jbr-dcevm - Install and use DCEVM variant of JetBranins' custom JRE.
 dev-util/webstorm:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
 dev-util/webstorm:jbr-jcef - Install and use JCEF variant of JetBranins' custom JRE.
-dev-util/webstorm:jbr-jfx - Install and use JFX variant of JetBranins' custom JRE.
-dev-util/webstorm:jbr-nomod - Install and use vanilla JetBranins' custom JRE.
+dev-util/webstorm:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
 net-misc/postman-bin:pax_kernel - Triggers a paxmarking of the binary
