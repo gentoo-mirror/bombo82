@@ -4,7 +4,7 @@ acct-user/icecream 0-r1: User for sys-devel/icecream
 app-editors/vscode-bin 1.60.1: Multiplatform Visual Studio Code from Microsoft (binary version)
 app-emulation/vmware-modules 16.1.2: VMware kernel modules
 app-emulation/vmware-workstation 16.1.2.17966106: Emulate a complete PC without the performance overhead of most emulators
-dev-db/dbeaver-bin 21.2.0: Free universal database tool and SQL client
+dev-db/dbeaver-bin 21.2.1: Free universal database tool and SQL client
 dev-util/clion 2021.2.2: A cross-platform IDE for C and C++
 dev-util/datagrip 2021.2.2: Many databases, one tool
 dev-util/goland 2021.2.3: GoLand is a cross-platform IDE built specially for Go developers
