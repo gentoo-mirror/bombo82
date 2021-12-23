@@ -31,6 +31,10 @@ dev-util/idea-ultimate:jbr-dcevm - Install and use DCEVM variant of JetBranins' 
 dev-util/idea-ultimate:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
 dev-util/idea-ultimate:jbr-jcef - Install and use JCEF variant of JetBranins' custom JRE.
 dev-util/idea-ultimate:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
+dev-util/jetbrains-gateway:jbr-dcevm - Install and use DCEVM variant of JetBranins' custom JRE.
+dev-util/jetbrains-gateway:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
+dev-util/jetbrains-gateway:jbr-jcef - Install and use JCEF variant of JetBranins' custom JRE.
+dev-util/jetbrains-gateway:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
 dev-util/phpstorm:jbr-dcevm - Install and use DCEVM variant of JetBranins' custom JRE.
 dev-util/phpstorm:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
 dev-util/phpstorm:jbr-jcef - Install and use JCEF variant of JetBranins' custom JRE.
