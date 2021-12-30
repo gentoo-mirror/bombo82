@@ -10,6 +10,6 @@ RDEPEND=>=app-accessibility/at-spi2-atk-2.15.1 dev-libs/libdbusmenu dev-util/lld
 REQUIRED_USE=^^ ( jbr-dcevm jbr-fd jbr-jcef jbr-vanilla )
 RESTRICT=bindist mirror splitdebug
 SLOT=0
-SRC_URI=https://download.jetbrains.com/idea/gateway/JetBrainsGateway-213.6461.56.tar.gz -> jetbrains-gateway-2021.3.1.tar.gz jbr-dcevm? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbr_dcevm-17_0_1-linux-x64-b164.8.tar.gz ) jbr-fd? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbr_fd-17_0_1-linux-x64-b164.8.tar.gz ) jbr-jcef? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17_0_1-linux-x64-b164.8.tar.gz ) jbr-vanilla? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17_0_1-linux-x64-b164.8.tar.gz )
+SRC_URI=https://download.jetbrains.com/idea/gateway/JetBrainsGateway-213.6461.64.tar.gz -> jetbrains-gateway-2021.3.1-213.6461.64.tar.gz jbr-dcevm? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbr_dcevm-17_0_1-linux-x64-b164.8.tar.gz ) jbr-fd? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbr_fd-17_0_1-linux-x64-b164.8.tar.gz ) jbr-jcef? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17_0_1-linux-x64-b164.8.tar.gz ) jbr-vanilla? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17_0_1-linux-x64-b164.8.tar.gz )
 _eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	wrapper	4251d4c84c25f59094fd557e0063a974
-_md5_=b0805cf24f196387fbfa681c6f48002b
+_md5_=ba1c3ee6ced936d053b6512775b9166f
