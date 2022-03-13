@@ -1,23 +1,22 @@
-# Copyright 2019-2021 Gianni Bombelli <bombo82@giannibombelli.it>
-# Distributed under the terms of the GNU General Public License  as published by the Free Software Foundation;
-# either version 2 of the License, or (at your option) any later version.
+# Copyright 1999-2022 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
 inherit desktop wrapper
 
-DESCRIPTION="The Python IDE for Professional Developers"
-HOMEPAGE="https://www.jetbrains.com/pycharm"
+DESCRIPTION="A cross-platform IDE for C and C++"
+HOMEPAGE="https://www.jetbrains.com/clion"
 LICENSE="
 	|| ( jetbrains_business-4.0 jetbrains_individual-4.2 jetbrains_educational-4.0 jetbrains_classroom-4.2 jetbrains_opensource-4.2 )
-	Apache-1.1 Apache-2.0 BSD BSD-2 CC0-1.0 CDDL CDDL-1.1 CPL-1.0 EPL-1.0 GPL-2-with-classpath-exception GPL-3 ISC LGPL-2.1 LGPL-3 MIT MPL-1.1 OFL trilead-ssh yFiles yourkit ZLIB
+	Apache-1.1 Apache-2.0 BSD BSD-2 CC0-1.0 CDDL CPL-1.0 GPL-2-with-classpath-exception GPL-3 ISC LGPL-2.1 LGPL-3 MIT MPL-1.1 OFL PSF-2 trilead-ssh UoI-NCSA yFiles yourkit
 "
 SLOT="0"
 VER="$(ver_cut 1-2)"
 KEYWORDS="~amd64"
 RESTRICT="bindist mirror splitdebug"
-IUSE="jbr-dcevm jbr-fd +jbr-jcef jbr-vanilla"
-REQUIRED_USE="^^ ( jbr-dcevm jbr-fd jbr-jcef jbr-vanilla )"
+IUSE="jbrsdk jbr-fd +jbrsdk-jcef jbr-vanilla"
+REQUIRED_USE="^^ ( jbrsdk jbr-fd jbrsdk-jcef jbr-vanilla )"
 QA_PREBUILT="opt/${P}/*"
 RDEPEND="
 	>=app-accessibility/at-spi2-atk-2.15.1
@@ -34,20 +33,18 @@ RDEPEND="
 	>=x11-libs/libXrandr-1.5
 "
 
-SIMPLE_NAME="PyCharm Professional"
-MY_PN="pycharm"
-SRC_URI_PATH="python"
-SRC_URI_PN="pycharm-professional"
-JBR_PV="17_0_1"
-JBR_PB="164.8"
+SIMPLE_NAME="CLion"
+MY_PN="${PN}"
+SRC_URI_PATH="cpp"
+SRC_URI_PN="CLion"
+JBR_PV="17_0_2"
+JBR_PB="315.1"
 SRC_URI="https://download.jetbrains.com/${SRC_URI_PATH}/${SRC_URI_PN}-${PV}.tar.gz -> ${P}.tar.gz
-	jbr-dcevm?	( https://cache-redirector.jetbrains.com/intellij-jbr/jbr_dcevm-${JBR_PV}-linux-x64-b${JBR_PB}.tar.gz )
 	jbr-fd?		( https://cache-redirector.jetbrains.com/intellij-jbr/jbr_fd-${JBR_PV}-linux-x64-b${JBR_PB}.tar.gz )
-	jbr-jcef?	( https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-${JBR_PV}-linux-x64-b${JBR_PB}.tar.gz )
 	jbr-vanilla?	( https://cache-redirector.jetbrains.com/intellij-jbr/jbr-${JBR_PV}-linux-x64-b${JBR_PB}.tar.gz )
+	jbrsdk?	( https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-${JBR_PV}-linux-x64-b${JBR_PB}.tar.gz )
+	jbrsdk-jcef?	( https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-${JBR_PV}-linux-x64-b${JBR_PB}.tar.gz )
 "
-
-S="${WORKDIR}/pycharm-${PV}"
 
 src_prepare() {
 	default
@@ -55,7 +52,7 @@ src_prepare() {
 	local pty4j_path="lib/pty4j-native/linux"
 	local remove_me=( "${pty4j_path}"/ppc64le "${pty4j_path}"/aarch64 "${pty4j_path}"/mips64el "${pty4j_path}"/arm )
 
-	if ! use jbr-jcef ; then
+	if ! use jbrsdk-jcef ; then
 		remove_me+=( )
 	fi
 
@@ -68,13 +65,14 @@ src_install() {
 	insinto "${dir}"
 	doins -r *
 	fperms 755 "${dir}"/bin/"${MY_PN}".sh
+	fperms 755 "${dir}"/bin/clang/linux/clang{d,-tidy}
 
-	if ! use jbr-jcef ; then
+	if ! use jbrsdk-jcef ; then
 		doins -r ../jbr
 	fi
 	fperms 755 "${dir}"/jbr/bin/{jaotc,java,javac,jdb,jfr,jhsdb,jjs,jrunscript,keytool,pack200,rmid,rmiregistry,serialver,unpack200}
 
-	if use jbr-jcef; then
+	if use jbrsdk-jcef; then
 		fperms 755 "${dir}"/jbr/lib/jcef_helper
 	fi
 

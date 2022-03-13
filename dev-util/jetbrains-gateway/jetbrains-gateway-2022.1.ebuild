@@ -1,22 +1,23 @@
-# Copyright 1999-2021 Gentoo Authors
-# Distributed under the terms of the GNU General Public License v2
+# Copyright 2022 Gianni Bombelli <bombo82@giannibombelli.it>
+# Distributed under the terms of the GNU General Public License as published by the Free Software Foundation;
+# either version 2 of the License, or (at your option) any later version.
 
 EAPI=7
 
 inherit desktop wrapper
 
-DESCRIPTION="A cross-platform IDE for C and C++"
-HOMEPAGE="https://www.jetbrains.com/clion"
+DESCRIPTION="Your single entry point to all remote development environments"
+HOMEPAGE="https://www.jetbrains.com/remote-development/gateway"
 LICENSE="
-	|| ( jetbrains_business-4.0 jetbrains_individual-4.2 jetbrains_educational-4.0 jetbrains_classroom-4.2 jetbrains_opensource-4.2 )
-	Apache-1.1 Apache-2.0 BSD BSD-2 CC0-1.0 CDDL CPL-1.0 GPL-2-with-classpath-exception GPL-3 ISC LGPL-2.1 LGPL-3 MIT MPL-1.1 OFL PSF-2 trilead-ssh UoI-NCSA yFiles yourkit
+	jetbrains_team_tools-2.1
+	Apache-1.1 Apache-2.0 BSD BSD-2 CC0-1.0 CC-BY-2.5 CDDL CDDL-1.1 codehaus CPL-1.0 GPL-2 GPL-2-with-classpath-exception GPL-3 ISC LGPL-2.1 LGPL-3 MIT MPL-1.1 MPL-2.0 OFL trilead-ssh yFiles yourkit W3C ZLIB
 "
 SLOT="0"
 VER="$(ver_cut 1-2)"
 KEYWORDS="~amd64"
 RESTRICT="bindist mirror splitdebug"
-IUSE="jbr-dcevm jbr-fd +jbr-jcef jbr-vanilla"
-REQUIRED_USE="^^ ( jbr-dcevm jbr-fd jbr-jcef jbr-vanilla )"
+IUSE="jbrsdk jbr-fd +jbrsdk-jcef jbr-vanilla"
+REQUIRED_USE="^^ ( jbrsdk jbr-fd jbrsdk-jcef jbr-vanilla )"
 QA_PREBUILT="opt/${P}/*"
 RDEPEND="
 	>=app-accessibility/at-spi2-atk-2.15.1
@@ -33,18 +34,21 @@ RDEPEND="
 	>=x11-libs/libXrandr-1.5
 "
 
-SIMPLE_NAME="CLion"
-MY_PN="${PN}"
-SRC_URI_PATH="cpp"
-SRC_URI_PN="CLion"
-JBR_PV="17_0_1"
-JBR_PB="164.8"
-SRC_URI="https://download.jetbrains.com/${SRC_URI_PATH}/${SRC_URI_PN}-${PV}.tar.gz -> ${P}.tar.gz
-	jbr-dcevm?	( https://cache-redirector.jetbrains.com/intellij-jbr/jbr_dcevm-${JBR_PV}-linux-x64-b${JBR_PB}.tar.gz )
+SIMPLE_NAME="JetBrains Gateway"
+MY_PN="gateway"
+SRC_URI_PATH="idea/gateway"
+SRC_URI_PN="JetBrainsGateway"
+BUILD_NUMBER="221.4501.94"
+JBR_PV="17_0_2"
+JBR_PB="315.1"
+SRC_URI="https://download.jetbrains.com/${SRC_URI_PATH}/${SRC_URI_PN}-${BUILD_NUMBER}.tar.gz -> ${P}-${BUILD_NUMBER}.tar.gz
 	jbr-fd?		( https://cache-redirector.jetbrains.com/intellij-jbr/jbr_fd-${JBR_PV}-linux-x64-b${JBR_PB}.tar.gz )
-	jbr-jcef?	( https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-${JBR_PV}-linux-x64-b${JBR_PB}.tar.gz )
 	jbr-vanilla?	( https://cache-redirector.jetbrains.com/intellij-jbr/jbr-${JBR_PV}-linux-x64-b${JBR_PB}.tar.gz )
+	jbrsdk?	( https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-${JBR_PV}-linux-x64-b${JBR_PB}.tar.gz )
+	jbrsdk-jcef?	( https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-${JBR_PV}-linux-x64-b${JBR_PB}.tar.gz )
 "
+
+S="${WORKDIR}/${SRC_URI_PN}-${BUILD_NUMBER}"
 
 src_prepare() {
 	default
@@ -52,7 +56,7 @@ src_prepare() {
 	local pty4j_path="lib/pty4j-native/linux"
 	local remove_me=( "${pty4j_path}"/ppc64le "${pty4j_path}"/aarch64 "${pty4j_path}"/mips64el "${pty4j_path}"/arm )
 
-	if ! use jbr-jcef ; then
+	if ! use jbrsdk-jcef ; then
 		remove_me+=( )
 	fi
 
@@ -65,14 +69,13 @@ src_install() {
 	insinto "${dir}"
 	doins -r *
 	fperms 755 "${dir}"/bin/"${MY_PN}".sh
-	fperms 755 "${dir}"/bin/clang/linux/clang{d,-tidy}
 
-	if ! use jbr-jcef ; then
+	if ! use jbrsdk-jcef ; then
 		doins -r ../jbr
 	fi
 	fperms 755 "${dir}"/jbr/bin/{jaotc,java,javac,jdb,jfr,jhsdb,jjs,jrunscript,keytool,pack200,rmid,rmiregistry,serialver,unpack200}
 
-	if use jbr-jcef; then
+	if use jbrsdk-jcef; then
 		fperms 755 "${dir}"/jbr/lib/jcef_helper
 	fi
 
