@@ -1,7 +1,7 @@
 DEFINED_PHASES=install prepare
-DESCRIPTION=Many databases, one tool
+DESCRIPTION=A cross-platform IDE for C and C++
 EAPI=7
-HOMEPAGE=https://www.jetbrains.com/datagrip
+HOMEPAGE=https://www.jetbrains.com/clion
 INHERIT=desktop wrapper
 IUSE=jbrsdk jbr-fd +jbrsdk-jcef jbr-vanilla
 KEYWORDS=~amd64
@@ -10,6 +10,6 @@ RDEPEND=>=app-accessibility/at-spi2-atk-2.15.1 dev-libs/libdbusmenu dev-util/lld
 REQUIRED_USE=^^ ( jbrsdk jbr-fd jbrsdk-jcef jbr-vanilla )
 RESTRICT=bindist mirror splitdebug
 SLOT=0
-SRC_URI=https://download.jetbrains.com/datagrip/datagrip-2021.3.4.tar.gz -> datagrip-2021.3.4.tar.gz jbr-fd? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbr_fd-17_0_2-linux-x64-b315.1.tar.gz ) jbr-vanilla? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17_0_2-linux-x64-b315.1.tar.gz ) jbrsdk? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17_0_2-linux-x64-b315.1.tar.gz ) jbrsdk-jcef? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17_0_2-linux-x64-b315.1.tar.gz )
+SRC_URI=https://download.jetbrains.com/cpp/CLion-2022.1.tar.gz -> clion-2022.1.tar.gz jbr-fd? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbr_fd-17_0_2-linux-x64-b315.1.tar.gz ) jbr-vanilla? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17_0_2-linux-x64-b315.1.tar.gz ) jbrsdk? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17_0_2-linux-x64-b315.1.tar.gz ) jbrsdk-jcef? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17_0_2-linux-x64-b315.1.tar.gz )
 _eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	wrapper	4a1902f969e5718126434fc35f3a0d9c
-_md5_=e49c9c2579e0caa56270b771ce1080f4
+_md5_=837b104535869adb7726528e6f31a9e9
