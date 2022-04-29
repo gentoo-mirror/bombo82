@@ -8,7 +8,7 @@ dev-db/dbeaver-bin 22.0.3: Free universal database tool and SQL client
 dev-util/clion 2022.1-r1: A cross-platform IDE for C and C++
 dev-util/datagrip 2022.1.1: Many databases, one tool
 dev-util/dataspell 2022.1: The IDE for Professional Data Scientists
-dev-util/goland 2022.1-r1: GoLand is a cross-platform IDE built specially for Go developers
+dev-util/goland 2022.1: GoLand is a cross-platform IDE built specially for Go developers
 dev-util/icecream-sundae 1.0.0: Monitor program for use with Icecream compile clusters based on KDE Frameworks
 dev-util/icemon 3.3-r1: Monitor program for use with Icecream compile clusters based on KDE Frameworks
 dev-util/idea-ultimate 2022.1: A complete toolset for web, mobile and enterprise development
