@@ -47,6 +47,10 @@ dev-util/pycharm-professional:jbr-fd - Install and use FD variant of JetBranins'
 dev-util/pycharm-professional:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
 dev-util/pycharm-professional:jbrsdk - Install and use JetBranins' custom JDK.
 dev-util/pycharm-professional:jbrsdk-jcef - Install and use JCEF variant of JetBranins' custom JDK.
+dev-util/rider:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
+dev-util/rider:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
+dev-util/rider:jbrsdk - Install and use JetBranins' custom JDK.
+dev-util/rider:jbrsdk-jcef - Install and use JCEF variant of JetBranins' custom JDK.
 dev-util/rubymine:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
 dev-util/rubymine:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
 dev-util/rubymine:jbrsdk - Install and use JetBranins' custom JDK.

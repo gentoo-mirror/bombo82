@@ -1,7 +1,7 @@
 DEFINED_PHASES=install prepare
-DESCRIPTION=The IDE for Professional Data Scientists
+DESCRIPTION=Many databases, one tool
 EAPI=7
-HOMEPAGE=https://www.jetbrains.com/dataspell
+HOMEPAGE=https://www.jetbrains.com/datagrip
 INHERIT=desktop wrapper
 IUSE=jbrsdk jbr-fd +jbrsdk-jcef jbr-vanilla
 KEYWORDS=~amd64
@@ -10,6 +10,6 @@ RDEPEND=>=app-accessibility/at-spi2-atk-2.15.1 dev-libs/libdbusmenu dev-util/lld
 REQUIRED_USE=^^ ( jbrsdk jbr-fd jbrsdk-jcef jbr-vanilla )
 RESTRICT=bindist mirror splitdebug
 SLOT=0
-SRC_URI=https://download.jetbrains.com/python/dataspell-2022.1.tar.gz -> dataspell-2022.1.tar.gz jbr-fd? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbr_fd-17_0_2-linux-x64-b315.1.tar.gz ) jbr-vanilla? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17_0_2-linux-x64-b315.1.tar.gz ) jbrsdk? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17_0_2-linux-x64-b315.1.tar.gz ) jbrsdk-jcef? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17_0_2-linux-x64-b315.1.tar.gz )
+SRC_URI=https://download.jetbrains.com/datagrip/datagrip-2022.1.4.tar.gz -> datagrip-2022.1.4.tar.gz jbr-fd? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbr_fd-17_0_2-linux-x64-b315.1.tar.gz ) jbr-vanilla? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17_0_2-linux-x64-b315.1.tar.gz ) jbrsdk? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17_0_2-linux-x64-b315.1.tar.gz ) jbrsdk-jcef? ( https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17_0_2-linux-x64-b315.1.tar.gz )
 _eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	wrapper	4a1902f969e5718126434fc35f3a0d9c
-_md5_=495ab1f0aca019ab5a57269a44507bcf
+_md5_=e49c9c2579e0caa56270b771ce1080f4
