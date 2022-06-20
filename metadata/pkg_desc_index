@@ -1,13 +1,13 @@
 acct-group/icecream 0-r1: Group for sys-devel/icecream
 acct-group/vmware 0-r1: Group for app-emulation/vmware-modules
 acct-user/icecream 0-r1: User for sys-devel/icecream
-app-editors/vscode-bin 1.67.2: Multiplatform Visual Studio Code from Microsoft (binary version)
+app-editors/vscode-bin 1.68.1: Multiplatform Visual Studio Code from Microsoft (binary version)
 app-emulation/vmware-modules 16.2.3: VMware kernel modules
 app-emulation/vmware-workstation 16.2.3.19376536: Emulate a complete PC without the performance overhead of most emulators
-dev-db/dbeaver-bin 22.0.5: Free universal database tool and SQL client
+dev-db/dbeaver-bin 22.1.0: Free universal database tool and SQL client
 dev-util/clion 2022.1.2: A cross-platform IDE for C and C++
-dev-util/datagrip 2022.1.4: Many databases, one tool
-dev-util/dataspell 2022.1.1: The IDE for Professional Data Scientists
+dev-util/datagrip 2022.1.5: Many databases, one tool
+dev-util/dataspell 2022.1.2: The IDE for Professional Data Scientists
 dev-util/goland 2022.1.2: GoLand is a cross-platform IDE built specially for Go developers
 dev-util/icecream-sundae 1.0.0: Monitor program for use with Icecream compile clusters based on KDE Frameworks
 dev-util/icemon 3.3-r1: Monitor program for use with Icecream compile clusters based on KDE Frameworks
@@ -19,5 +19,5 @@ dev-util/rider 2022.1.2: Fast & powerful cross-platform .NET IDE
 dev-util/rubymine 2022.1.2: The Most Intelligent Ruby and Rails IDE
 dev-util/webstorm 2022.1.2: The smartest JavaScript IDE
 games-rpg/open-adventure 1.9: Forward-port of the Crowther/Woods Adventure 2.5 from 1995
-net-misc/postman-bin 9.19.3: Supercharge your API workflow
+net-misc/postman-bin 9.21.2: Supercharge your API workflow
 sys-devel/icecream 1.3.1-r3 1.4: Distributed compiling of C(++) code across several machines; based on distcc
