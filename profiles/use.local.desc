@@ -15,48 +15,8 @@ app-emulation/vmware-workstation:vmware-tools-solaris - Install VMware Tools for
 app-emulation/vmware-workstation:vmware-tools-winPre2k - Install VMware Tools for Windows (before 2000) guests.
 app-emulation/vmware-workstation:vmware-tools-winPreVista - Install VMware Tools for Windows (after 2000, before Vista) guests.
 app-emulation/vmware-workstation:vmware-tools-windows - Install VMware Tools for Windows (Vista and later) guests.
-dev-util/clion:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
-dev-util/clion:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
-dev-util/clion:jbrsdk - Install and use JetBranins' custom JDK.
-dev-util/clion:jbrsdk-jcef - Install and use JCEF variant of JetBranins' custom JDK.
-dev-util/datagrip:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
-dev-util/datagrip:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
-dev-util/datagrip:jbrsdk - Install and use JetBranins' custom JDK.
-dev-util/datagrip:jbrsdk-jcef - Install and use JCEF variant of JetBranins' custom JDK.
-dev-util/dataspell:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
-dev-util/dataspell:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
-dev-util/dataspell:jbrsdk - Install and use JetBranins' custom JDK.
-dev-util/dataspell:jbrsdk-jcef - Install and use JCEF variant of JetBranins' custom JDK.
-dev-util/goland:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
-dev-util/goland:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
-dev-util/goland:jbrsdk - Install and use JetBranins' custom JDK.
-dev-util/goland:jbrsdk-jcef - Install and use JCEF variant of JetBranins' custom JDK.
-dev-util/idea-ultimate:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
-dev-util/idea-ultimate:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
-dev-util/idea-ultimate:jbrsdk - Install and use JetBranins' custom JDK.
-dev-util/idea-ultimate:jbrsdk-jcef - Install and use JCEF variant of JetBranins' custom JDK.
 dev-util/jetbrains-gateway:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
 dev-util/jetbrains-gateway:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
 dev-util/jetbrains-gateway:jbrsdk - Install and use JetBranins' custom JDK.
 dev-util/jetbrains-gateway:jbrsdk-jcef - Install and use JCEF variant of JetBranins' custom JDK.
-dev-util/phpstorm:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
-dev-util/phpstorm:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
-dev-util/phpstorm:jbrsdk - Install and use JetBranins' custom JDK.
-dev-util/phpstorm:jbrsdk-jcef - Install and use JCEF variant of JetBranins' custom JDK.
-dev-util/pycharm-professional:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
-dev-util/pycharm-professional:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
-dev-util/pycharm-professional:jbrsdk - Install and use JetBranins' custom JDK.
-dev-util/pycharm-professional:jbrsdk-jcef - Install and use JCEF variant of JetBranins' custom JDK.
-dev-util/rider:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
-dev-util/rider:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
-dev-util/rider:jbrsdk - Install and use JetBranins' custom JDK.
-dev-util/rider:jbrsdk-jcef - Install and use JCEF variant of JetBranins' custom JDK.
-dev-util/rubymine:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
-dev-util/rubymine:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
-dev-util/rubymine:jbrsdk - Install and use JetBranins' custom JDK.
-dev-util/rubymine:jbrsdk-jcef - Install and use JCEF variant of JetBranins' custom JDK.
-dev-util/webstorm:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
-dev-util/webstorm:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
-dev-util/webstorm:jbrsdk - Install and use JetBranins' custom JDK.
-dev-util/webstorm:jbrsdk-jcef - Install and use JCEF variant of JetBranins' custom JDK.
 net-misc/postman-bin:pax_kernel - Triggers a paxmarking of the binary
