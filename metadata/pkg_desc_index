@@ -6,7 +6,7 @@ app-emulation/vmware-modules 16.2.4: VMware kernel modules
 app-emulation/vmware-workstation 16.2.4.20089737: Emulate a complete PC without the performance overhead of most emulators
 dev-db/dbeaver-bin 22.1.4: Free universal database tool and SQL client
 dev-util/clion 2022.2.1: A cross-platform IDE for C and C++
-dev-util/datagrip 2022.2.1: Many databases, one tool
+dev-util/datagrip 2022.2.4: Many databases, one tool
 dev-util/dataspell 2022.2: The IDE for Professional Data Scientists
 dev-util/goland 2022.2.2: GoLand is a cross-platform IDE built specially for Go developers
 dev-util/icecream-sundae 1.0.0: Monitor program for use with Icecream compile clusters based on KDE Frameworks
