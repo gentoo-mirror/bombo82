@@ -7,7 +7,7 @@ EAPI=8
 inherit desktop wrapper
 
 DESCRIPTION="Fast & powerful cross-platform .NET IDE"
-HOMEPAGE="https://www.jetbrains.com/rider"
+HOMEPAGE="https://www.jetbrains.com/rider/"
 # FIXME check licenses
 LICENSE="
 	|| ( jetbrains_business-4.0 jetbrains_individual-4.2 jetbrains_educational-4.0 jetbrains_classroom-4.2 jetbrains_opensource-4.2 )
@@ -20,7 +20,7 @@ RESTRICT="bindist mirror splitdebug"
 IUSE=""
 QA_PREBUILT="opt/${P}/*"
 RDEPEND="
-	>=app-accessibility/at-spi2-atk-2.15.1
+	app-accessibility/at-spi2-atk
 	dev-libs/libdbusmenu
 	dev-util/lldb
 	dev-util/lttng-ust

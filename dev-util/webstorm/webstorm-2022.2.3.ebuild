@@ -1,15 +1,16 @@
-# Copyright 1999-2022 Gentoo Authors
-# Distributed under the terms of the GNU General Public License v2
+# Copyright 2019-2022 Gianni Bombelli <bombo82@giannibombelli.it>
+# Distributed under the terms of the GNU General Public License as published by the Free Software Foundation;
+# either version 2 of the License, or (at your option) any later version.
 
 EAPI=8
 
 inherit desktop wrapper
 
-DESCRIPTION="A cross-platform IDE for C and C++"
-HOMEPAGE="https://www.jetbrains.com/clion"
+DESCRIPTION="The smartest JavaScript IDE"
+HOMEPAGE="https://www.jetbrains.com/webstorm/"
 LICENSE="
 	|| ( jetbrains_business-4.0 jetbrains_individual-4.2 jetbrains_educational-4.0 jetbrains_classroom-4.2 jetbrains_opensource-4.2 )
-	Apache-1.1 Apache-2.0 BSD BSD-2 CC0-1.0 CDDL CPL-1.0 GPL-2-with-classpath-exception GPL-3 ISC LGPL-2.1 LGPL-3 MIT MPL-1.1 OFL PSF-2 trilead-ssh UoI-NCSA yFiles yourkit
+	Apache-1.1 Apache-2.0 BSD BSD-2 CC0-1.0 CDDL CDDL-1.1 CPL-1.0 GPL-2 GPL-2-with-classpath-exception GPL-3 ISC LGPL-2.1 LGPL-3 MIT MPL-1.1 OFL trilead-ssh yFiles yourkit W3C ZLIB
 "
 SLOT="0"
 VER="$(ver_cut 1-2)"
@@ -18,7 +19,7 @@ RESTRICT="bindist mirror splitdebug"
 IUSE=""
 QA_PREBUILT="opt/${P}/*"
 RDEPEND="
-	>=app-accessibility/at-spi2-atk-2.15.1
+	app-accessibility/at-spi2-atk
 	dev-libs/libdbusmenu
 	dev-util/lldb
 	media-libs/mesa[X(+)]
@@ -32,11 +33,14 @@ RDEPEND="
 	>=x11-libs/libXrandr-1.5
 "
 
-SIMPLE_NAME="CLion"
+SIMPLE_NAME="WebStorm"
 MY_PN="${PN}"
-SRC_URI_PATH="cpp"
-SRC_URI_PN="CLion"
+SRC_URI_PATH="webstorm"
+SRC_URI_PN="WebStorm"
 SRC_URI="https://download.jetbrains.com/${SRC_URI_PATH}/${SRC_URI_PN}-${PV}.tar.gz -> ${P}.tar.gz"
+
+BUILD_NUMBER="222.4345.14"
+S="${WORKDIR}/WebStorm-${BUILD_NUMBER}"
 
 src_prepare() {
 	default
@@ -55,18 +59,12 @@ src_install() {
 	fperms 755 "${dir}"/bin/{"${MY_PN}",format,inspect,ltedit,remote-dev-server}.sh
 	fperms 755 "${dir}"/bin/fsnotifier
 
-	fperms 755 "${dir}"/bin/clang/linux/{clangd,clang-tidy,clazy-standalone,llvm-symbolizer}
-	fperms 755 "${dir}"/bin/cmake/linux/bin/{ccmake,cmake,cpack,ctest}
-	fperms 755 "${dir}"/bin/gdb/linux/bin/{gcore,gdb,gdb-add-index,gdbserver}
-	fperms 755 "${dir}"/bin/lldb/linux/bin/{lldb,lldb-argdumper,LLDBFrontend,lldb-server}
-	fperms 755 "${dir}"/bin/ninja/linux/ninja
-
 	fperms 755 "${dir}"/jbr/bin/{java,javac,jcmd,jdb,jfr,jinfo,jmap,jps,jrunscript,jstack,jstat,keytool,rmiregistry,serialver}
 	fperms 755 "${dir}"/jbr/lib/{chrome-sandbox,jcef_helper,jexec,jspawnhelper}
 
 	make_wrapper "${PN}" "${dir}"/bin/"${MY_PN}".sh
 	newicon bin/"${MY_PN}".svg "${PN}".svg
-	make_desktop_entry "${PN}" "${SIMPLE_NAME} ${VER}" "${PN}" "Development;IDE;"
+	make_desktop_entry "${PN}" "${SIMPLE_NAME} ${VER}" "${PN}" "Development;IDE;WebDevelopment;"
 
 	# recommended by: https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit
 	dodir /usr/lib/sysctl.d/

@@ -6,11 +6,11 @@ EAPI=8
 
 inherit desktop wrapper
 
-DESCRIPTION="GoLand is a cross-platform IDE built specially for Go developers"
-HOMEPAGE="https://www.jetbrains.com/go"
+DESCRIPTION="The Most Intelligent Ruby and Rails IDE"
+HOMEPAGE="https://www.jetbrains.com/ruby/"
 LICENSE="
 	|| ( jetbrains_business-4.0 jetbrains_individual-4.2 jetbrains_educational-4.0 jetbrains_classroom-4.2 jetbrains_opensource-4.2 )
-	Apache-1.1 Apache-2.0 BSD BSD-2 CC0-1.0 CDDL CDDL-1.1 CPL-1.0 GPL-2-with-classpath-exception GPL-3 ISC LGPL-2.1 LGPL-3 MIT MPL-1.1 OFL PSF-2 trilead-ssh yFiles yourkit
+	Apache-1.1 Apache-2.0 BSD BSD-2 CC0-1.0 CDDL CPL-1.0 GPL-2 GPL-2-with-classpath-exception GPL-3 ISC LGPL-2.1 LGPL-3 MIT MPL-1.1 OFL trilead-ssh yFiles yourkit
 "
 SLOT="0"
 VER="$(ver_cut 1-2)"
@@ -19,11 +19,10 @@ RESTRICT="bindist mirror splitdebug"
 IUSE=""
 QA_PREBUILT="opt/${P}/*"
 RDEPEND="
-	>=app-accessibility/at-spi2-atk-2.15.1
+	app-accessibility/at-spi2-atk
 	dev-libs/libdbusmenu
 	dev-util/lldb
 	media-libs/mesa[X(+)]
-	sys-libs/glibc
 	x11-libs/libX11
 	x11-libs/libXcomposite
 	x11-libs/libXcursor
@@ -34,13 +33,13 @@ RDEPEND="
 	>=x11-libs/libXrandr-1.5
 "
 
-SIMPLE_NAME="GoLand"
+SIMPLE_NAME="RubyMine"
 MY_PN="${PN}"
-SRC_URI_PATH="go"
-SRC_URI_PN="${PN}"
+SRC_URI_PATH="ruby"
+SRC_URI_PN="RubyMine"
 SRC_URI="https://download.jetbrains.com/${SRC_URI_PATH}/${SRC_URI_PN}-${PV}.tar.gz -> ${P}.tar.gz"
 
-S="${WORKDIR}/GoLand-${PV}"
+S="${WORKDIR}/RubyMine-${PV}"
 
 src_prepare() {
 	default
@@ -56,10 +55,8 @@ src_install() {
 
 	insinto "${dir}"
 	doins -r *
-	fperms 755 "${dir}"/bin/{"${MY_PN}",format,inspect,ltedit,remote-dev-server}.sh
+	fperms 755 "${dir}"/bin/{"${MY_PN}",format,ltedit,remote-dev-server,rinspect}.sh
 	fperms 755 "${dir}"/bin/fsnotifier
-
-	fperms 755 "${dir}"/plugins/go/lib/dlv/linux/dlv
 
 	fperms 755 "${dir}"/jbr/bin/{java,javac,jcmd,jdb,jfr,jinfo,jmap,jps,jrunscript,jstack,jstat,keytool,rmiregistry,serialver}
 	fperms 755 "${dir}"/jbr/lib/{chrome-sandbox,jcef_helper,jexec,jspawnhelper}
