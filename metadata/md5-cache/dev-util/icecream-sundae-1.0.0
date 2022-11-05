@@ -1,6 +1,6 @@
 BDEPEND=>=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
 DEFINED_PHASES=compile configure install test
-DEPEND=sys-libs/ncurses sys-devel/icecream dev-util/meson dev-util/ninja sys-libs/glibc
+DEPEND=sys-libs/ncurses sys-devel/icecream dev-util/meson dev-util/ninja
 DESCRIPTION=Monitor program for use with Icecream compile clusters based on KDE Frameworks
 EAPI=8
 HOMEPAGE=https://github.com/JPEWdev/icecream-sundae
@@ -11,4 +11,4 @@ RDEPEND=sys-libs/ncurses sys-devel/icecream
 SLOT=0
 SRC_URI=https://github.com/JPEWdev/icecream-sundae/archive/v1.0.0.tar.gz -> icecream-sundae-1.0.0.tar.gz
 _eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	58ec4e54962bf45d065fb95030701514	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	multilib	5ca4e49abed8e3a2f7b56920eadee157	python-utils-r1	b9fc5e97e886514e5132f50465185401	meson	1994a5aef5d4f5798b92f64d6f9a6003
-_md5_=24cb8340b20f3b833e405bb735c491d6
+_md5_=f020cf5816481ebe034093e0c177f0ae
