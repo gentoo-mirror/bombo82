@@ -14,7 +14,7 @@ dev-util/icemon 3.3-r1: Monitor program for use with Icecream compile clusters b
 dev-util/idea-ultimate 2022.2.3: A complete toolset for web, mobile and enterprise development
 dev-util/jetbrains-gateway 2022.1-r2: Your single entry point to all remote development environments
 dev-util/phpstorm 2022.2.3: The Lightning-Smart PHP IDE
-dev-util/pycharm-professional 2022.2.3: The Python IDE for Professional Developers
+dev-util/pycharm-professional 2022.2.4: The Python IDE for Professional Developers
 dev-util/rider 2022.2.4: Fast & powerful cross-platform .NET IDE
 dev-util/rubymine 2022.2.3: The Most Intelligent Ruby and Rails IDE
 dev-util/webstorm 2022.2.3: The smartest JavaScript IDE
