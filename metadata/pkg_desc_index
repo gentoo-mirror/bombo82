@@ -4,7 +4,7 @@ acct-user/icecream 0-r1: User for sys-devel/icecream
 app-editors/vscode-bin 1.73.1: Multiplatform Visual Studio Code from Microsoft (binary version)
 app-emulation/vmware-modules 16.2.4: VMware kernel modules
 app-emulation/vmware-workstation 16.2.4.20089737: Emulate a complete PC without the performance overhead of most emulators
-dev-db/dbeaver-bin 22.2.4: Free universal database tool and SQL client
+dev-db/dbeaver-bin 22.2.5: Free universal database tool and SQL client
 dev-util/clion 2022.2.4: A cross-platform IDE for C and C++
 dev-util/datagrip 2022.2.5: Many databases, one tool
 dev-util/dataspell 2022.2.4: The IDE for Professional Data Scientists
@@ -17,7 +17,7 @@ dev-util/phpstorm 2022.2.3: The Lightning-Smart PHP IDE
 dev-util/pycharm-professional 2022.2.4: The Python IDE for Professional Developers
 dev-util/rider 2022.2.4: Fast & powerful cross-platform .NET IDE
 dev-util/rubymine 2022.2.4: The Most Intelligent Ruby and Rails IDE
-dev-util/webstorm 2022.3: The smartest JavaScript IDE
+dev-util/webstorm 2022.3-r1: The smartest JavaScript IDE
 games-rpg/open-adventure 1.11: Forward-port of the Crowther/Woods Adventure 2.5 from 1995
 net-misc/postman-bin 10.1.2: Supercharge your API workflow
 sys-devel/icecream 1.4: Distributed compiling of C(++) code across several machines; based on distcc

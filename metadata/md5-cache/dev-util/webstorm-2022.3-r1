@@ -1,4 +1,4 @@
-DEFINED_PHASES=install prepare
+DEFINED_PHASES=install
 DESCRIPTION=The smartest JavaScript IDE
 EAPI=8
 HOMEPAGE=https://www.jetbrains.com/webstorm/
@@ -10,4 +10,4 @@ RESTRICT=bindist mirror splitdebug
 SLOT=0
 SRC_URI=https://download.jetbrains.com/webstorm/WebStorm-2022.3.tar.gz -> webstorm-2022.3.tar.gz
 _eclasses_=desktop	7eb20ad915a0a318176d51bc2508ff5c	wrapper	4a1902f969e5718126434fc35f3a0d9c
-_md5_=e7ba993f53ccd19319f7100d73b2b7f5
+_md5_=bdb57b1e45b1bbb5cd25e26b162a652b
