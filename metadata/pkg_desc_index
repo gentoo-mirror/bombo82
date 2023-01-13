@@ -12,7 +12,7 @@ dev-util/goland 2022.3.1: GoLand is a cross-platform IDE built specially for Go 
 dev-util/icecream-sundae 1.0.0: Monitor program for use with Icecream compile clusters based on KDE Frameworks
 dev-util/icemon 3.3-r1: Monitor program for use with Icecream compile clusters based on KDE Frameworks
 dev-util/idea-ultimate 2022.3.1: A complete toolset for web, mobile and enterprise development
-dev-util/jetbrains-gateway 2022.1-r2: Your single entry point to all remote development environments
+dev-util/jetbrains-gateway 2022.3.1: Your single entry point to all remote development environments
 dev-util/phpstorm 2022.3.1: The Lightning-Smart PHP IDE
 dev-util/pycharm-professional 2022.3.1: The Python IDE for Professional Developers
 dev-util/rider 2022.3.1: Fast & powerful cross-platform .NET IDE

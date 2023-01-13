@@ -15,8 +15,4 @@ app-emulation/vmware-workstation:vmware-tools-solaris - Install VMware Tools for
 app-emulation/vmware-workstation:vmware-tools-winPre2k - Install VMware Tools for Windows (before 2000) guests.
 app-emulation/vmware-workstation:vmware-tools-winPreVista - Install VMware Tools for Windows (after 2000, before Vista) guests.
 app-emulation/vmware-workstation:vmware-tools-windows - Install VMware Tools for Windows (Vista and later) guests.
-dev-util/jetbrains-gateway:jbr-fd - Install and use FD variant of JetBranins' custom JRE.
-dev-util/jetbrains-gateway:jbr-vanilla - Install and use vanilla JetBranins' custom JRE.
-dev-util/jetbrains-gateway:jbrsdk - Install and use JetBranins' custom JDK.
-dev-util/jetbrains-gateway:jbrsdk-jcef - Install and use JCEF variant of JetBranins' custom JDK.
 net-misc/postman-bin:pax-kernel - Triggers a paxmarking of the binary
