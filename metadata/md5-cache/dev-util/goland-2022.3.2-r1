@@ -10,4 +10,4 @@ RESTRICT=bindist mirror splitdebug
 SLOT=0
 SRC_URI=https://download.jetbrains.com/go/goland-2022.3.2.tar.gz -> goland-2022.3.2.tar.gz
 _eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	wrapper	4a1902f969e5718126434fc35f3a0d9c
-_md5_=9073063ebc0d86e03759b13b27b11ef3
+_md5_=6553e7cf9b097a2a00bc54d6bf48865a
