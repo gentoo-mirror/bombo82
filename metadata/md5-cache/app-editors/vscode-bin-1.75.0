@@ -9,5 +9,5 @@ RDEPEND=x11-libs/gtk+
 RESTRICT=bindist mirror
 SLOT=0
 SRC_URI=https://update.code.visualstudio.com/1.75.0/linux-x64/stable -> vscode-bin-1.75.0.tar.gz
-_eclasses_=desktop	7eb20ad915a0a318176d51bc2508ff5c	wrapper	4a1902f969e5718126434fc35f3a0d9c
+_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	wrapper	4a1902f969e5718126434fc35f3a0d9c
 _md5_=5e698b22419be43ca552e74debcabdf0
