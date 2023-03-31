@@ -16,8 +16,8 @@ dev-util/jetbrains-gateway 2022.3.2: Your single entry point to all remote devel
 dev-util/phpstorm 2022.3.3: The Lightning-Smart PHP IDE
 dev-util/pycharm-professional 2023.1: The Python IDE for Professional Developers
 dev-util/rider 2022.3.3: Fast & powerful cross-platform .NET IDE
-dev-util/rubymine 2022.3.3: The Most Intelligent Ruby and Rails IDE
-dev-util/webstorm 2022.3.4: The smartest JavaScript IDE
+dev-util/rubymine 2023.1: The Most Intelligent Ruby and Rails IDE
+dev-util/webstorm 2023.1: The smartest JavaScript IDE
 games-rpg/open-adventure 1.11: Forward-port of the Crowther/Woods Adventure 2.5 from 1995
 net-misc/postman-bin 10.11.1: Supercharge your API workflow
 sys-devel/icecream 1.4: Distributed compiling of C(++) code across several machines; based on distcc
