@@ -1,6 +1,6 @@
 BDEPEND=app-admin/chrpath
 DEFINED_PHASES=config install postinst postrm prepare setup unpack
-DEPEND=|| ( >=dev-lang/python-3.11.1-r1:3.11 >=dev-lang/python-3.10.9-r1:3.10 >=dev-lang/python-3.9.16-r1:3.9 ) >=dev-util/patchelf-0.9 modules? ( ~app-emulation/vmware-modules-17.0.0 ) ovftool? ( app-admin/chrpath )
+DEPEND=|| ( >=dev-lang/python-3.11.1-r1:3.11 >=dev-lang/python-3.10.9-r1:3.10 ) >=dev-util/patchelf-0.9 modules? ( ~app-emulation/vmware-modules-17.0.0 ) ovftool? ( app-admin/chrpath )
 DESCRIPTION=Emulate a complete PC without the performance overhead of most emulators
 EAPI=8
 HOMEPAGE=https://www.vmware.com/products/workstation-pro.html
@@ -13,5 +13,5 @@ REQUIRED_USE=vmware-tools-darwin? ( macos-guests ) vmware-tools-darwinPre15? ( m
 RESTRICT=mirror preserve-libs strip
 SLOT=0
 SRC_URI=https://download3.vmware.com/software/WKST-1700-LX/VMware-Workstation-Full-17.0.0-20800274.x86_64.bundle macos-guests? ( https://github.com/paolo-projects/unlocker/archive/3.0.4.tar.gz -> unlocker-3.0.4.tar.gz vmware-tools-darwinPre15? ( https://softwareupdate.vmware.com/cds/vmw-desktop/fusion/13.0.0/20802013/x86/core/com.vmware.fusion.zip.tar -> com.vmware.fusion-17.0.0.20800274.zip.tar ) vmware-tools-darwin? ( https://softwareupdate.vmware.com/cds/vmw-desktop/fusion/13.0.0/20802013/x86/core/com.vmware.fusion.zip.tar -> com.vmware.fusion-17.0.0.20800274.zip.tar ) )
-_eclasses_=readme.gentoo-r1	204091a2cde6179cd9d3db26d09412d3	toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	d1408425c7c4a7669b9b17735404b693	flag-o-matic	514815b1cc0dd4aeac177c2e812b3b1a	pam	4efe951aa8ce2c16288d7c915196fe29	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-utils-r1	429bfd4e8d8e39db5385ba5744f30788	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29	xdg-utils	baea6080dd821f5562d715887954c9d3
+_eclasses_=readme.gentoo-r1	204091a2cde6179cd9d3db26d09412d3	toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	d1408425c7c4a7669b9b17735404b693	flag-o-matic	514815b1cc0dd4aeac177c2e812b3b1a	pam	4efe951aa8ce2c16288d7c915196fe29	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-utils-r1	4544ab96b58e177dc52d75e42f5ee307	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29	xdg-utils	baea6080dd821f5562d715887954c9d3
 _md5_=88e87342d2d1ae769113e278fc2f5898
