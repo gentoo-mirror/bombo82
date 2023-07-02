@@ -1,6 +1,6 @@
 BDEPEND=app-admin/chrpath
 DEFINED_PHASES=config install postinst postrm prepare setup unpack
-DEPEND=|| ( >=dev-lang/python-3.11.3:3.11 >=dev-lang/python-3.10.11:3.10 ) >=dev-util/patchelf-0.9 modules? ( ~app-emulation/vmware-modules-16.2.5 ) ovftool? ( app-admin/chrpath )
+DEPEND=|| ( >=dev-lang/python-3.11.4:3.11 >=dev-lang/python-3.10.12:3.10 ) >=dev-util/patchelf-0.9 modules? ( ~app-emulation/vmware-modules-16.2.5 ) ovftool? ( app-admin/chrpath )
 DESCRIPTION=Emulate a complete PC without the performance overhead of most emulators
 EAPI=8
 HOMEPAGE=https://www.vmware.com/products/workstation-pro.html
@@ -13,5 +13,5 @@ REQUIRED_USE=vmware-tools-darwin? ( macos-guests ) vmware-tools-darwinPre15? ( m
 RESTRICT=mirror preserve-libs strip
 SLOT=0
 SRC_URI=https://download3.vmware.com/software/WKST-1625-LX/VMware-Workstation-Full-16.2.5-20904516.x86_64.bundle macos-guests? ( https://github.com/paolo-projects/unlocker/archive/3.0.4.tar.gz -> unlocker-3.0.4.tar.gz vmware-tools-darwinPre15? ( https://softwareupdate.vmware.com/cds/vmw-desktop/fusion/12.2.5/20904517/x86/core/com.vmware.fusion.zip.tar -> com.vmware.fusion-16.2.5.20904516.zip.tar ) vmware-tools-darwin? ( https://softwareupdate.vmware.com/cds/vmw-desktop/fusion/12.2.5/20904517/x86/core/com.vmware.fusion.zip.tar -> com.vmware.fusion-16.2.5.20904516.zip.tar ) )
-_eclasses_=readme.gentoo-r1	204091a2cde6179cd9d3db26d09412d3	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	ad475baa777c9978fa035216c8264a10	pam	4efe951aa8ce2c16288d7c915196fe29	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-utils-r1	a34d5f83235297b76d71eaf8deb53768	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29	xdg-utils	baea6080dd821f5562d715887954c9d3
+_eclasses_=readme.gentoo-r1	204091a2cde6179cd9d3db26d09412d3	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	ad475baa777c9978fa035216c8264a10	pam	4efe951aa8ce2c16288d7c915196fe29	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-utils-r1	a013e16d5d896b3d8be68dd2a0e846ea	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29	xdg-utils	baea6080dd821f5562d715887954c9d3
 _md5_=f62c8cc077d798d0aa5449391db6d49a
