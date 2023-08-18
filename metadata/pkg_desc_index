@@ -1,10 +1,10 @@
 acct-group/icecream 0-r1: Group for sys-devel/icecream
 acct-group/vmware 0-r1: Group for app-emulation/vmware-modules
 acct-user/icecream 0-r1: User for sys-devel/icecream
-app-editors/vscode-bin 1.80.2: Multiplatform Visual Studio Code from Microsoft (binary version)
+app-editors/vscode-bin 1.81.1: Multiplatform Visual Studio Code from Microsoft (binary version)
 app-emulation/vmware-modules 16.2.5 17.0.2: VMware kernel modules
 app-emulation/vmware-workstation 16.2.5.20904516-r1 17.0.2.21581411: Emulate a complete PC without the performance overhead of most emulators
-dev-db/dbeaver-bin 23.1.3: Free universal database tool and SQL client
+dev-db/dbeaver-bin 23.1.4: Free universal database tool and SQL client
 dev-util/clion 2023.2: A cross-platform IDE for C and C++
 dev-util/datagrip 2023.2: Many databases, one tool
 dev-util/dataspell 2023.2: The IDE for Professional Data Scientists
@@ -13,11 +13,11 @@ dev-util/icecream-sundae 1.0.0: Monitor program for use with Icecream compile cl
 dev-util/icemon 3.3-r1: Monitor program for use with Icecream compile clusters based on KDE Frameworks
 dev-util/idea-ultimate 2023.2: A complete toolset for web, mobile and enterprise development
 dev-util/jetbrains-gateway 2023.2: Your single entry point to all remote development environments
-dev-util/phpstorm 2023.1.4: The Lightning-Smart PHP IDE
+dev-util/phpstorm 2023.2: The Lightning-Smart PHP IDE
 dev-util/pycharm-professional 2023.2: The Python IDE for Professional Developers
-dev-util/rider 2023.1.4: Fast & powerful cross-platform .NET IDE
+dev-util/rider 2023.2: Fast & powerful cross-platform .NET IDE
 dev-util/rubymine 2023.2: The Most Intelligent Ruby and Rails IDE
 dev-util/webstorm 2023.2: The smartest JavaScript IDE
 games-rpg/open-adventure 1.11: Forward-port of the Crowther/Woods Adventure 2.5 from 1995
-net-misc/postman-bin 10.16.0: Supercharge your API workflow
+net-misc/postman-bin 10.17.0: Supercharge your API workflow
 sys-devel/icecream 1.4: Distributed compiling of C(++) code across several machines; based on distcc
