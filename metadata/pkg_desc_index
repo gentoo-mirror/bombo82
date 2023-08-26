@@ -3,7 +3,7 @@ acct-group/vmware 0-r1: Group for app-emulation/vmware-modules
 acct-user/icecream 0-r1: User for sys-devel/icecream
 app-editors/vscode-bin 1.81.1: Multiplatform Visual Studio Code from Microsoft (binary version)
 app-emulation/vmware-modules 16.2.5 17.0.2: VMware kernel modules
-app-emulation/vmware-workstation 16.2.5.20904516-r1 17.0.2.21581411: Emulate a complete PC without the performance overhead of most emulators
+app-emulation/vmware-workstation 16.2.5.20904516-r1 17.0.2.21581411-r1: Emulate a complete PC without the performance overhead of most emulators
 dev-db/dbeaver-bin 23.1.5: Free universal database tool and SQL client
 dev-util/clion 2023.2.1: A cross-platform IDE for C and C++
 dev-util/datagrip 2023.2.1: Many databases, one tool
