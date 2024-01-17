@@ -10,4 +10,4 @@ RESTRICT=bindist mirror splitdebug
 SLOT=0
 SRC_URI=https://download.jetbrains.com/ruby/RubyMine-2023.3.2.tar.gz -> rubymine-2023.3.2.tar.gz
 _eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	wrapper	4a1902f969e5718126434fc35f3a0d9c
-_md5_=a275e25c9624d1e85499589e4554c0ee
+_md5_=6709ccbe9e588beef88cb5b92359baeb

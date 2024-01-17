@@ -10,4 +10,4 @@ RESTRICT=bindist mirror splitdebug
 SLOT=0
 SRC_URI=https://download.jetbrains.com/cpp/CLion-2023.3.2.tar.gz -> clion-2023.3.2.tar.gz
 _eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	wrapper	4a1902f969e5718126434fc35f3a0d9c
-_md5_=191a4eb53f1807d7c3b203f02d71ca06
+_md5_=17d0e18a0c473dd6c6ae0a9df70b779c
