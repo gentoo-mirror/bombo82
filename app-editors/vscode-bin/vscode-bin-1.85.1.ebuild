@@ -1,4 +1,4 @@
-# Copyright 2020-2022 Gianni Bombelli <bombo82@giannibombelli.it>
+# Copyright 2020-2024 Gianni Bombelli <bombo82@giannibombelli.it>
 # Distributed under the terms of the GNU General Public License  as published by the Free Software Foundation;
 # either version 2 of the License, or (at your option) any later version.
 
@@ -8,10 +8,7 @@ inherit desktop wrapper
 
 DESCRIPTION="Multiplatform Visual Studio Code from Microsoft (binary version)"
 HOMEPAGE="https://code.visualstudio.com"
-
 SRC_URI="https://update.code.visualstudio.com/${PV}/linux-x64/stable -> ${PF}.tar.gz"
-RESTRICT="mirror strip bindist"
-
 LICENSE="MS-vscode"
 SLOT="0"
 KEYWORDS="~amd64"

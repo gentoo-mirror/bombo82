@@ -13,15 +13,14 @@ SRC_URI="https://github.com/JPEWdev/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
 
 RDEPEND="
 	sys-libs/ncurses
 	sys-devel/icecream
 "
 DEPEND="${RDEPEND}
-	dev-util/meson
-	dev-util/ninja
+    dev-build/meson
+    dev-build/ninja
 "
 
 PATCHES=(
