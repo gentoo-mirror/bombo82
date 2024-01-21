@@ -1,15 +1,16 @@
-# Copyright 1999-2024 Gentoo Authors
-# Distributed under the terms of the GNU General Public License v2
+# Copyright 2019-2024 Gianni Bombelli <bombo82@giannibombelli.it>
+# Distributed under the terms of the GNU General Public License as published by the Free Software Foundation;
+# either version 2 of the License, or (at your option) any later version.
 
 EAPI=8
 
 inherit desktop wrapper
 
-DESCRIPTION="A cross-platform IDE for C and C++"
-HOMEPAGE="https://www.jetbrains.com/clion/"
+DESCRIPTION="GoLand is a cross-platform IDE built specially for Go developers"
+HOMEPAGE="https://www.jetbrains.com/go/"
 LICENSE="
 	|| ( jetbrains_business-4.0 jetbrains_individual-4.2 jetbrains_educational-4.0 jetbrains_classroom-4.2 jetbrains_opensource-4.2 )
-	Apache-1.1 Apache-2.0 BSD BSD-2 CC0-1.0 CDDL CPL-1.0 GPL-2-with-classpath-exception GPL-3 ISC LGPL-2.1 LGPL-3 MIT MPL-1.1 OFL PSF-2 trilead-ssh UoI-NCSA yFiles yourkit
+	Apache-1.1 Apache-2.0 BSD BSD-2 CC0-1.0 CDDL CDDL-1.1 CPL-1.0 GPL-2-with-classpath-exception GPL-3 ISC LGPL-2.1 LGPL-3 MIT MPL-1.1 OFL PSF-2 trilead-ssh yFiles yourkit
 "
 SLOT="0"
 VER="$(ver_cut 1-2)"
@@ -20,6 +21,10 @@ RDEPEND="
 	dev-libs/libdbusmenu
 	dev-debug/lldb
 	media-libs/mesa[X(+)]
+	sys-devel/gcc
+	sys-libs/glibc
+	sys-libs/libselinux
+	sys-process/audit
 	x11-libs/libX11
 	x11-libs/libXcomposite
 	x11-libs/libXcursor
@@ -30,11 +35,21 @@ RDEPEND="
 	x11-libs/libXrandr
 "
 
-SIMPLE_NAME="CLion"
+SIMPLE_NAME="GoLand"
 MY_PN="${PN}"
-SRC_URI_PATH="cpp"
-SRC_URI_PN="CLion"
+SRC_URI_PATH="go"
+SRC_URI_PN="${PN}"
 SRC_URI="https://download.jetbrains.com/${SRC_URI_PATH}/${SRC_URI_PN}-${PV}.tar.gz -> ${P}.tar.gz"
+
+S="${WORKDIR}/GoLand-${PV}"
+
+src_prepare() {
+    default
+
+    rm -rv ./lib/async-profiler/aarch64 || die
+    rm -rv ./plugins/cwm-plugin/quiche-native/linux-aarch64 || die
+    rm -rv ./plugins/go-plugin/lib/dlv/linuxarm/dlv || die
+}
 
 src_install() {
 	local dir="/opt/${P}"
@@ -43,20 +58,14 @@ src_install() {
 	doins -r *
 	fperms 755 "${dir}"/bin/{"${MY_PN}",format,inspect,jetbrains_client,ltedit,remote-dev-server}.sh
 	fperms 755 "${dir}"/bin/{fsnotifier,repair,restarter}
-	fperms 755 "${dir}"/bin/clang/linux/x64/{clangd,clang-tidy,clazy-standalone,llvm-symbolizer}
-	fperms 755 "${dir}"/bin/cmake/linux/x64/bin/{cmake,cpack,ctest}
-	fperms 755 "${dir}"/bin/gdb/linux/x64/bin/{gcore,gdb,gdb-add-index,gdbserver}
-	fperms 755 "${dir}"/bin/lldb/linux/x64/bin/{lldb,lldb-argdumper,LLDBFrontend,lldb-server}
-	fperms 755 "${dir}"/bin/ninja/linux/x64/ninja
 
 	fperms 755 "${dir}"/jbr/bin/{java,javac,javadoc,jcmd,jdb,jfr,jhsdb,jinfo,jmap,jps,jrunscript,jstack,jstat,keytool,rmiregistry,serialver}
 	fperms 755 "${dir}"/jbr/lib/{chrome-sandbox,jcef_helper,jexec,jspawnhelper}
 
 	fperms 755 "${dir}"/plugins/gateway-plugin/lib/remote-dev-workers/remote-dev-worker-linux-amd64
     fperms 755 "${dir}"/plugins/javascript-impl/helpers/package-version-range-matcher/node_modules/semver/bin/semver.js
-    fperms 755 "${dir}"/plugins/python-ce/helpers/{pockets/autolog.py,pycodestyle-2.10.0.py,pycodestyle.py,pydev/pydevd_attach_to_process/linux_and_mac/compile_linux_aarch64.sh,pydev/pydevd_attach_to_process/linux_and_mac/compile_linux.sh,pydev/pydevd_attach_to_process/linux_and_mac/compile_mac.sh,typeshed/scripts/generate_proto_stubs.sh,typeshed/scripts/sync_tensorflow_protobuf_stubs.sh}
+    fperms 755 "${dir}"/plugins/go-plugin/lib/dlv/linux/dlv
     fperms 755 "${dir}"/plugins/remote-dev-server/{bin/launcher.sh,selfcontained/bin/xkbcomp,selfcontained/bin/Xvfb}
-    fperms 755 "${dir}"/plugins/tailwindcss/server/tailwindcss-language-server
 
 	make_wrapper "${PN}" "${dir}"/bin/"${MY_PN}".sh
 	newicon bin/"${MY_PN}".svg "${PN}".svg
