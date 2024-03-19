@@ -1,27 +1,27 @@
 acct-group/icecream 0-r1: Group for sys-devel/icecream
 acct-group/vmware 0-r1: Group for app-emulation/vmware-modules
 acct-user/icecream 0-r1: User for sys-devel/icecream
-app-editors/vscode-bin 1.86.2: Multiplatform Visual Studio Code from Microsoft (binary version)
+app-editors/vscode-bin 1.87.1: Multiplatform Visual Studio Code from Microsoft (binary version)
 app-emulation/vmware-modules 16.2.5-r2 17.5.0-r1: VMware kernel modules
 app-emulation/vmware-workstation 16.2.5.20904516-r2 17.5.0.22583795-r1: Emulate a complete PC without the performance overhead of most emulators
 app-misc/evemu 2.7.0: tools and bindings for kernel evdev device emulation, data capture, and replay
-dev-db/dbeaver-bin 23.3.5: Free universal database tool and SQL client
+dev-db/dbeaver-bin 24.0.0: Free universal database tool and SQL client
 dev-util/aqua 2023.3.233.14475.33-r1: An IDE for writing tests you can be proud of
 dev-util/clion 2023.3.4: A cross-platform IDE for C and C++
 dev-util/datagrip 2023.3.4: Many databases, one tool
 dev-util/dataspell 2023.3.4-r1: Turn data into insights with ease
-dev-util/goland 2023.3.4: The complete IDE crafted for Gophers
+dev-util/goland 2023.3.5: The complete IDE crafted for Gophers
 dev-util/icecream-sundae 1.0.0: Monitor program for use with Icecream compile clusters based on KDE Frameworks
 dev-util/icemon 3.3-r1: Monitor program for use with Icecream compile clusters based on KDE Frameworks
-dev-util/idea-ultimate 2023.3.4: The Leading Java and Kotlin IDE
+dev-util/idea-ultimate 2023.3.5: The Leading Java and Kotlin IDE
 dev-util/jetbrains-gateway 2023.3.4: Your single entry point to all remote development environments
-dev-util/phpstorm 2023.3.4: The Lightning-Smart PHP IDE
-dev-util/pycharm-professional 2023.3.3: The Python IDE for Professional Developers
-dev-util/rider 2023.3.3: Fast & powerful cross-platform .NET IDE
-dev-util/rubymine 2023.3.4: Code Smarter with Ruby on Rails IDE
-dev-util/rustrover 2023.3.233.14015.153: A brand new JetBrains IDE for Rust Developers
-dev-util/webstorm 2023.3.4: The JavaScript and TypeScript IDE
-dev-util/writerside 2023.3.233.14389-r1: The most powerful development environment – now adapted for writing documentation
+dev-util/phpstorm 2023.3.5: The Lightning-Smart PHP IDE
+dev-util/pycharm-professional 2023.3.4: The Python IDE for Professional Developers
+dev-util/rider 2023.3.4: Fast & powerful cross-platform .NET IDE
+dev-util/rubymine 2023.3.5: Code Smarter with Ruby on Rails IDE
+dev-util/rustrover 2023.3.233.14015.155: A brand new JetBrains IDE for Rust Developers
+dev-util/webstorm 2023.3.5: The JavaScript and TypeScript IDE
+dev-util/writerside 2023.3.233.14938: The most powerful development environment – now adapted for writing documentation
 games-rpg/open-adventure 1.11: Forward-port of the Crowther/Woods Adventure 2.5 from 1995
-net-misc/postman-bin 10.23.5: Supercharge your API workflow
+net-misc/postman-bin 10.24.3: Supercharge your API workflow
 sys-devel/icecream 1.4: Distributed compiling of C(++) code across several machines; based on distcc
