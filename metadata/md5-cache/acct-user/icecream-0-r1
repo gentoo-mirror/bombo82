@@ -6,4 +6,4 @@ KEYWORDS=~amd64 ~arm ~arm64 ~ppc ~ppc64 ~x86
 RDEPEND=acct-group/icecream
 SLOT=0
 _eclasses_=user-info	9951b1a0e4f026d16c33a001fd2d5cdf	acct-user	485d9a6aa1311a8ca9da380d8a8c6c76
-_md5_=1ad3036c2f566e8117c1b9cb40208c2e
+_md5_=84425a7d2887cde023c10c8ccd8c1ffd
