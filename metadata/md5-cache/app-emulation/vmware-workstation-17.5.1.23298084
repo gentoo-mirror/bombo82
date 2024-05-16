@@ -1,9 +1,9 @@
 BDEPEND=app-admin/chrpath
 DEFINED_PHASES=config install postinst postrm prepare setup unpack
-DEPEND=|| ( dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) >=dev-util/patchelf-0.9 modules? ( ~app-emulation/vmware-modules-17.5.0 ) ovftool? ( app-admin/chrpath )
+DEPEND=|| ( dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) >=dev-util/patchelf-0.9 modules? ( ~app-emulation/vmware-modules-17.5.1 ) ovftool? ( app-admin/chrpath )
 DESCRIPTION=Emulate a complete PC without the performance overhead of most emulators
 EAPI=8
-HOMEPAGE=https://www.vmware.com/products/workstation-pro.html
+HOMEPAGE=https://www.vmware.com/products/workstation/
 INHERIT=readme.gentoo-r1 pam python-any-r1 xdg-utils
 IUSE=doc macos-guests +modules ovftool vix vmware-tools-darwin vmware-tools-darwinPre15 vmware-tools-linux vmware-tools-linuxPreGlibc25 vmware-tools-netware vmware-tools-solaris vmware-tools-windows vmware-tools-winPre2k vmware-tools-winPreVista
 KEYWORDS=~amd64
@@ -12,6 +12,6 @@ RDEPEND=app-arch/bzip2 app-arch/unzip app-shells/bash dev-db/sqlite:3 dev-libs/d
 REQUIRED_USE=vmware-tools-darwin? ( macos-guests ) vmware-tools-darwinPre15? ( macos-guests )
 RESTRICT=mirror preserve-libs strip
 SLOT=0
-SRC_URI=https://download3.vmware.com/software/WKST-1750-LX/VMware-Workstation-Full-17.5.0-22583795.x86_64.bundle macos-guests? ( https://github.com/paolo-projects/unlocker/archive/3.0.5.tar.gz -> unlocker-3.0.5.tar.gz vmware-tools-darwinPre15? ( https://softwareupdate.vmware.com/cds/vmw-desktop/fusion/13.0.0/20802013/x86/core/com.vmware.fusion.zip.tar -> com.vmware.fusion-17.5.0.22583795.zip.tar ) vmware-tools-darwin? ( https://softwareupdate.vmware.com/cds/vmw-desktop/fusion/13.0.0/20802013/x86/core/com.vmware.fusion.zip.tar -> com.vmware.fusion-17.5.0.22583795.zip.tar ) )
+SRC_URI=https://download3.vmware.com/software/WKST-1751-LX/VMware-Workstation-Full-17.5.1-23298084.x86_64.bundle macos-guests? ( https://github.com/paolo-projects/unlocker/archive/3.0.5.tar.gz -> unlocker-3.0.5.tar.gz vmware-tools-darwinPre15? ( https://softwareupdate.vmware.com/cds/vmw-desktop/fusion/13.5.1/23298085/universal/core/com.vmware.fusion.zip.tar -> com.vmware.fusion-17.5.1.23298084.zip.tar ) vmware-tools-darwin? ( https://softwareupdate.vmware.com/cds/vmw-desktop/fusion/13.5.1/23298085/universal/core/com.vmware.fusion.zip.tar -> com.vmware.fusion-17.5.1.23298084.zip.tar ) )
 _eclasses_=readme.gentoo-r1	204091a2cde6179cd9d3db26d09412d3	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	d309b9713dfc18e754cba88d3ba69653	pam	b56d0c9c20fc5b553f13c8ae165a10a5	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	python-utils-r1	e527bb25fc6ab8bb127b889b8f62500a	python-any-r1	f5169813d1619761b459800587005fd2	xdg-utils	baea6080dd821f5562d715887954c9d3
-_md5_=f3368a6b35e307c1e3ffda06c7007a91
+_md5_=3f33114b9c2dfc125fa343706e96a26e
