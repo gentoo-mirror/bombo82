@@ -5,22 +5,22 @@ app-editors/vscode-bin 1.90.2: Multiplatform Visual Studio Code from Microsoft (
 app-emulation/vmware-modules 17.5.1: VMware kernel modules
 app-emulation/vmware-workstation 17.5.1.23298084: Emulate a complete PC without the performance overhead of most emulators
 app-misc/evemu 2.7.0: tools and bindings for kernel evdev device emulation, data capture, and replay
-dev-db/dbeaver-bin 24.1.0: Free universal database tool and SQL client
+dev-db/dbeaver-bin 24.1.1: Free universal database tool and SQL client
 dev-util/aqua 2024.1.2: An IDE for writing tests you can be proud of
-dev-util/clion 2024.1.3: A cross-platform IDE for C and C++
+dev-util/clion 2024.1.4: A cross-platform IDE for C and C++
 dev-util/datagrip 2024.1.4: Many databases, one tool
 dev-util/dataspell 2024.1.3: Turn data into insights with ease
-dev-util/goland 2024.1.3: The complete IDE crafted for Gophers
+dev-util/goland 2024.1.4: The complete IDE crafted for Gophers
 dev-util/icecream-sundae 1.0.0: Monitor program for use with Icecream compile clusters based on KDE Frameworks
 dev-util/icemon 3.3-r1: Monitor program for use with Icecream compile clusters based on KDE Frameworks
-dev-util/idea-ultimate 2024.1.3: The Leading Java and Kotlin IDE
+dev-util/idea-ultimate 2024.1.4: The Leading Java and Kotlin IDE
 dev-util/jetbrains-gateway 2024.1.2: Your single entry point to all remote development environments
 dev-util/phpstorm 2024.1.3: The Lightning-Smart PHP IDE
 dev-util/pycharm-professional 2024.1.3: The Python IDE for Professional Developers
 dev-util/rider 2024.1.3: Fast & powerful cross-platform .NET IDE
-dev-util/rubymine 2024.1.3: Code Smarter with Ruby on Rails IDE
+dev-util/rubymine 2024.1.4: Code Smarter with Ruby on Rails IDE
 dev-util/rustrover 2024.1.2: A brand new JetBrains IDE for Rust Developers
-dev-util/webstorm 2024.1.4: The JavaScript and TypeScript IDE
+dev-util/webstorm 2024.1.5: The JavaScript and TypeScript IDE
 dev-util/writerside 2024.1.241.16003.85: The most powerful development environment – now adapted for writing documentation
 games-rpg/open-adventure 1.11: Forward-port of the Crowther/Woods Adventure 2.5 from 1995
 net-misc/postman-bin 11.2.0: Supercharge your API workflow
