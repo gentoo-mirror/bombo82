@@ -5,7 +5,7 @@ app-editors/vscode-bin 1.96.2: Multiplatform Visual Studio Code from Microsoft (
 app-emulation/vmware-modules 17.5.1: VMware kernel modules
 app-emulation/vmware-workstation 17.5.1.23298084: Emulate a complete PC without the performance overhead of most emulators
 app-misc/evemu 2.7.0: tools and bindings for kernel evdev device emulation, data capture, and replay
-dev-db/dbeaver-bin 24.3.1: Free universal database tool and SQL client
+dev-db/dbeaver-bin 24.3.2: Free universal database tool and SQL client
 dev-util/aqua 2024.3.1: An IDE for writing tests you can be proud of
 dev-util/clion 2024.3.1.1: A cross-platform IDE for C and C++
 dev-util/datagrip 2024.3.3: Many databases, one tool
@@ -21,7 +21,7 @@ dev-util/rider 2024.3.3: Fast & powerful cross-platform .NET IDE
 dev-util/rubymine 2024.3.1.1: Code Smarter with Ruby on Rails IDE
 dev-util/rustrover 2024.3.2: A brand new JetBrains IDE for Rust Developers
 dev-util/webstorm 2024.3.1.1: The JavaScript and TypeScript IDE
-dev-util/writerside 2024.3-r2: The most powerful development environment – now adapted for writing documentation
+dev-util/writerside 2024.3-r3: The most powerful development environment – now adapted for writing documentation
 games-rpg/open-adventure 1.11: Forward-port of the Crowther/Woods Adventure 2.5 from 1995
-net-misc/postman-bin 11.23.3: Supercharge your API workflow
+net-misc/postman-bin 11.27.3: Supercharge your API workflow
 sys-devel/icecream 1.4: Distributed compiling of C(++) code across several machines; based on distcc
