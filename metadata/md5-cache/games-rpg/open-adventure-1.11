@@ -10,4 +10,4 @@ RDEPEND=dev-python/pyyaml dev-libs/libedit
 SLOT=0
 SRC_URI=https://gitlab.com/esr/open-adventure/-/archive/1.11/open-adventure-1.11.tar.gz
 _eclasses_=wrapper	11a2a3bd712784986679b60a0cab34a0
-_md5_=6e82a65f657ef18f0f7e494f7e5c2420
+_md5_=7537f2369898ca553fea536e5910cefe

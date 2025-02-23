@@ -5,4 +5,4 @@ INHERIT=acct-group
 KEYWORDS=~amd64
 SLOT=0
 _eclasses_=user-info	9951b1a0e4f026d16c33a001fd2d5cdf	acct-group	c2bb1fc7bada6e119b3ce202ca42476f
-_md5_=8072ac2c3118c88b146ff94f275da1a5
+_md5_=2b20fc213273e370c685199feee9eb64
