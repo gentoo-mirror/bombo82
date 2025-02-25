@@ -6,6 +6,7 @@ app-emulation/vmware-modules 17.5.1: VMware kernel modules
 app-emulation/vmware-workstation 17.5.1.23298084: Emulate a complete PC without the performance overhead of most emulators
 app-misc/evemu 2.7.0: tools and bindings for kernel evdev device emulation, data capture, and replay
 dev-db/dbeaver-bin 24.3.5: Free universal database tool and SQL client
+dev-java/sbt-bin 1.10.7: sbt is a simple build tool for Scala, Java, and more
 dev-util/aqua 2024.3.2: An IDE for writing tests you can be proud of
 dev-util/clion 2024.3.3: A cross-platform IDE for C and C++
 dev-util/datagrip 2024.3.5: Many databases, one tool
