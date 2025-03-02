@@ -23,6 +23,5 @@ dev-util/rubymine 2024.3.4: Code Smarter with Ruby on Rails IDE
 dev-util/rustrover 2024.3.5: A brand new JetBrains IDE for Rust Developers
 dev-util/webstorm 2024.3.4: The JavaScript and TypeScript IDE
 dev-util/writerside 2024.3-r3: The most powerful development environment – now adapted for writing documentation
-games-rpg/open-adventure 1.11: Forward-port of the Crowther/Woods Adventure 2.5 from 1995
 net-misc/postman-bin 11.33.4: Supercharge your API workflow
 sys-devel/icecream 1.4: Distributed compiling of C(++) code across several machines; based on distcc
