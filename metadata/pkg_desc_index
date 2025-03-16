@@ -1,27 +1,27 @@
 acct-group/icecream 0-r1: Group for sys-devel/icecream
 acct-group/vmware 0-r1: Group for app-emulation/vmware-modules
 acct-user/icecream 0-r1: User for sys-devel/icecream
-app-editors/vscode-bin 1.97.2: Multiplatform Visual Studio Code from Microsoft (binary version)
+app-editors/vscode-bin 1.98.2: Multiplatform Visual Studio Code from Microsoft (binary version)
 app-emulation/vmware-modules 17.5.1: VMware kernel modules
 app-emulation/vmware-workstation 17.5.1.23298084: Emulate a complete PC without the performance overhead of most emulators
 app-misc/evemu 2.7.0: tools and bindings for kernel evdev device emulation, data capture, and replay
-dev-db/dbeaver-bin 24.3.5: Free universal database tool and SQL client
-dev-java/sbt-bin 1.10.7: sbt is a simple build tool for Scala, Java, and more
+dev-db/dbeaver-bin 25.0.0: Free universal database tool and SQL client
+dev-java/sbt-bin 1.10.10: sbt is a simple build tool for Scala, Java, and more
 dev-util/aqua 2024.3.2: An IDE for writing tests you can be proud of
 dev-util/clion 2024.3.4: A cross-platform IDE for C and C++
 dev-util/datagrip 2024.3.5: Many databases, one tool
 dev-util/dataspell 2024.3.2: Turn data into insights with ease
-dev-util/goland 2024.3.4: The complete IDE crafted for Gophers
+dev-util/goland 2024.3.5: The complete IDE crafted for Gophers
 dev-util/icecream-sundae 1.0.0: Monitor program for use with Icecream compile clusters based on KDE Frameworks
 dev-util/icemon 3.3-r1: Monitor program for use with Icecream compile clusters based on KDE Frameworks
-dev-util/idea-ultimate 2024.3.4: The Leading Java and Kotlin IDE
+dev-util/idea-ultimate 2024.3.4.1: The Leading Java and Kotlin IDE
 dev-util/jetbrains-gateway 2024.3.3: Your single entry point to all remote development environments
-dev-util/phpstorm 2024.3.4: The Lightning-Smart PHP IDE
+dev-util/phpstorm 2024.3.5: The Lightning-Smart PHP IDE
 dev-util/pycharm-professional 2024.3.4: The Python IDE for Professional Developers
 dev-util/rider 2024.3.6: Fast & powerful cross-platform .NET IDE
-dev-util/rubymine 2024.3.4: Code Smarter with Ruby on Rails IDE
-dev-util/rustrover 2024.3.5: A brand new JetBrains IDE for Rust Developers
-dev-util/webstorm 2024.3.4: The JavaScript and TypeScript IDE
+dev-util/rubymine 2024.3.5: Code Smarter with Ruby on Rails IDE
+dev-util/rustrover 2024.3.7: A brand new JetBrains IDE for Rust Developers
+dev-util/webstorm 2024.3.5: The JavaScript and TypeScript IDE
 dev-util/writerside 2024.3-r3: The most powerful development environment – now adapted for writing documentation
 net-misc/postman-bin 11.33.4: Supercharge your API workflow
 sys-devel/icecream 1.4: Distributed compiling of C(++) code across several machines; based on distcc
