@@ -16,3 +16,10 @@ app-emulation/vmware-workstation:vmware-tools-winPre2k - Install VMware Tools fo
 app-emulation/vmware-workstation:vmware-tools-winPreVista - Install VMware Tools for Windows (after 2000, before Vista) guests.
 app-emulation/vmware-workstation:vmware-tools-windows - Install VMware Tools for Windows (Vista and later) guests.
 net-misc/postman-bin:pax-kernel - Triggers a paxmarking of the binary
+net-vpn/openvpn3:addon-aws - Enable the OpenVPN 3 AWS-VPC integration service
+net-vpn/openvpn3:addon-deviceposture - Enable the OpenVPN 3 Device Posture service
+net-vpn/openvpn3:bash-completion - Build the bash-completion helper scripts
+net-vpn/openvpn3:dco - Enable the Data Channel Offload support (DCO)
+net-vpn/openvpn3:doc - Build Doxygen documentation
+net-vpn/openvpn3:selinux - Add SELinux support (openvpn3-admin init-config)
+net-vpn/openvpn3:systemd - Enable use of systemd-specific libraries and features
