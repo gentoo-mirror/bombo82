@@ -1,9 +1,6 @@
 # List of maintained packages
 - app-editors:
   - app-editors/vscode-bin
-- app-emulation:
-  - app-emulation/vmware-modules
-  - app-emulation/vmware-workstation
 - app-misc:
   - app-misc/evemu
 - dev-db:
@@ -13,7 +10,6 @@
 - dev-libs:
   - dev-libs/gdbuspp
 - dev-util:
-  - dev-util/aqua
   - dev-util/clion
   - dev-util/datagrip
   - dev-util/dataspell
