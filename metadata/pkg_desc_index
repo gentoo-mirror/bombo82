@@ -1,7 +1,7 @@
 acct-group/icecream 0-r1: Group for sys-devel/icecream
 acct-user/icecream 0-r1: User for sys-devel/icecream
 app-editors/vscode-bin 1.102.3: Multiplatform Visual Studio Code from Microsoft (binary version)
-app-misc/evemu 2.7.0: tools and bindings for kernel evdev device emulation, data capture, and replay
+app-misc/evemu 2.7.0-r1: tools and bindings for kernel evdev device emulation, data capture, and replay
 dev-db/dbeaver-bin 25.1.4: Free universal database tool and SQL client
 dev-java/sbt-bin 1.11.4: sbt is a simple build tool for Scala, Java, and more
 dev-libs/gdbuspp 3: This library provides a simpler C++ based interface to implement D-Bus into applications in a more C++ approach, based on the C++17 standard.
