@@ -5,5 +5,5 @@ INHERIT=acct-user
 KEYWORDS=~amd64 ~arm ~arm64 ~ppc ~ppc64 ~x86
 RDEPEND=acct-group/icecream
 SLOT=0
-_eclasses_=user-info	563da40a1a20ea1e55bbf4d149fc190d	acct-user	807e7b6a195e8f149fbe98cfe84754e3
+_eclasses_=user-info	563da40a1a20ea1e55bbf4d149fc190d	acct-user	d3f06a3ef4289d7ba6428eed2e20ae57
 _md5_=ae0a5b2d2027bbe8c687d832dab5e3fa
