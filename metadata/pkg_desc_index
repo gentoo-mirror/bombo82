@@ -1,25 +1,25 @@
 acct-group/icecream 0-r1: Group for sys-devel/icecream
 acct-user/icecream 0-r1: User for sys-devel/icecream
-app-editors/vscode-bin 1.103.1: Multiplatform Visual Studio Code from Microsoft (binary version)
-app-misc/evemu 2.7.0-r1: tools and bindings for kernel evdev device emulation, data capture, and replay
-dev-db/dbeaver-bin 25.1.4: Free universal database tool and SQL client
-dev-java/sbt-bin 1.11.4: sbt is a simple build tool for Scala, Java, and more
+app-editors/vscode-bin 1.105.0: Multiplatform Visual Studio Code from Microsoft (binary version)
+app-misc/evemu 2.7.0-r2: tools and bindings for kernel evdev device emulation, data capture, and replay
+dev-db/dbeaver-bin 25.2.2: Free universal database tool and SQL client
+dev-java/sbt-bin 1.11.7: sbt is a simple build tool for Scala, Java, and more
 dev-libs/gdbuspp 3: This library provides a simpler C++ based interface to implement D-Bus into applications in a more C++ approach, based on the C++17 standard.
-dev-util/clion 2025.2: A cross-platform IDE for C and C++
-dev-util/datagrip 2025.2.2: Many databases, one tool
-dev-util/dataspell 2025.2: Turn data into insights with ease
-dev-util/goland 2025.2: The complete IDE crafted for Gophers
+dev-util/clion 2025.2.3: A cross-platform IDE for C and C++
+dev-util/datagrip 2025.2.4: Many databases, one tool
+dev-util/dataspell 2025.2.1: Turn data into insights with ease
+dev-util/goland 2025.2.3: The complete IDE crafted for Gophers
 dev-util/icecream-sundae 1.1.0: Monitor program for use with Icecream compile clusters based on KDE Frameworks
 dev-util/icemon 3.3-r1: Monitor program for use with Icecream compile clusters based on KDE Frameworks
-dev-util/idea-ultimate 2025.2: The Leading Java and Kotlin IDE
-dev-util/jetbrains-gateway 2025.2: Your single entry point to all remote development environments
-dev-util/phpstorm 2025.2: The Lightning-Smart PHP IDE
-dev-util/pycharm-professional 2025.2.0.1: The Python IDE for Professional Developers
-dev-util/rider 2025.2: Fast & powerful cross-platform .NET IDE
-dev-util/rubymine 2025.2: Code Smarter with Ruby on Rails IDE
-dev-util/rustrover 2025.2: A brand new JetBrains IDE for Rust Developers
-dev-util/webstorm 2025.2: The JavaScript and TypeScript IDE
-net-misc/postman-bin 11.58.4: Supercharge your API workflow
+dev-util/idea-ultimate 2025.2.3: The Leading Java and Kotlin IDE
+dev-util/jetbrains-gateway 2025.2.3: Your single entry point to all remote development environments
+dev-util/phpstorm 2025.2.3: The Lightning-Smart PHP IDE
+dev-util/pycharm-professional 2025.2.3: The Python IDE for Professional Developers
+dev-util/rider 2025.2.3: Fast & powerful cross-platform .NET IDE
+dev-util/rubymine 2025.2.3: Code Smarter with Ruby on Rails IDE
+dev-util/rustrover 2025.2.3: A brand new JetBrains IDE for Rust Developers
+dev-util/webstorm 2025.2.3: The JavaScript and TypeScript IDE
+net-misc/postman-bin 11.66.5: Supercharge your API workflow
 net-print/cnrdrvcups-lb 6.10: Canon UFR II / LIPSLX Printer Driver for Linux
 net-vpn/openvpn3 24.1 25 9999: Next generation OpenVPN client
 sys-devel/icecream 1.4: Distributed compiling of C(++) code across several machines; based on distcc

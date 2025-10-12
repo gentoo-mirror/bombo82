@@ -9,6 +9,6 @@ LICENSE=MS-vscode
 RDEPEND=media-libs/libpng x11-libs/gtk+:3 x11-libs/cairo x11-libs/libXtst !app-editors/vscode net-print/cups x11-libs/libnotify x11-libs/libXScrnSaver dev-libs/nss app-crypt/libsecret[crypt]
 RESTRICT=bindist mirror
 SLOT=0
-SRC_URI=https://update.code.visualstudio.com/1.103.1/linux-x64/stable -> vscode-bin-1.103.1.tar.gz
+SRC_URI=https://update.code.visualstudio.com/1.105.0/linux-x64/stable -> vscode-bin-1.105.0.tar.gz
 _eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	wrapper	11a2a3bd712784986679b60a0cab34a0
 _md5_=732d7e9b988211c5f9405cf33ca3765e
